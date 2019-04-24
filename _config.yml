@@ -1,7 +1,7 @@
 # External gems
 # See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
 gems:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
+        #  - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
 
@@ -10,11 +10,11 @@ exclude:
 
 # Site settings
 title: atomic0x90
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
+subtitle: "열심히 놀기 위해 열심히 공부하는 초보 개발자"
 email: hanyujun.study@gmail.com
 name: Yujun Han
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  열심히 놀기 위해 열심히 공부하는 초보 개발자 / C / Data-Struct
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -31,14 +31,14 @@ inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+#jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layout: 'archive'
+#  permalinks:
+#    category: '/category/:name/'
+#    tag: '/tag/:name/'
 
 # Disqus comments
 # disqus_shortname: bencentra
@@ -70,61 +70,61 @@ descriptions:
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
-  - name: Twitter
-    icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
-    desc: Follow me on Twitter
-    share: true
+#  - name: Twitter
+#    icon: twitter
+#    username: TheBenCentra
+#    url: https://twitter.com/TheBenCentra
+#    desc: Follow me on Twitter
+#    share: true
 
-  - name: Facebook
-    icon: facebook
-    username: thebencentra
-    url:
-    desc: Friend me on Facebook
-    share: true
+#  - name: Facebook
+#    icon: facebook
+#    username: thebencentra
+#    url:
+#    desc: Friend me on Facebook
+#    share: true
 
   - name: GitHub
     icon: github
-    username: bencentra
-    url: https://github.com/bencentra
-    desc: Fork me on GitHub
-    share: false
-
-  - name: LinkedIn
-    icon: linkedin
-    username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
-    desc: Connect with me on LinkedIn
+    username: atomic0x90
+    url: https://github.com/atomic0x90
+    desc: Come and see my Github
     share: true
 
-  - name: Google+
-    icon: google-plus
-    username:
-    url:
-    desc: Add me to your Circles
-    share: true
+#  - name: LinkedIn
+#    icon: linkedin
+#    username: Ben Centra
+#    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+#    desc: Connect with me on LinkedIn
+#    share: true
 
-  - name: YouTube
-    icon: youtube
-    username:
-    url:
-    desc: Subscribe on YouTube
-    share: false
+#  - name: Google+
+#    icon: google-plus
+#    username:
+#    url:
+#    desc: Add me to your Circles
+#    share: true
 
-  - name: Instagram
-    icon: instagram
-    username:
-    url:
-    desc: Follow me on Instagram
-    share: false
+#  - name: YouTube
+#    icon: youtube
+#    username:
+#    url:
+#    desc: Subscribe on YouTube
+#    share: false
 
-  - name: Pinterest
-    icon: pinterest
-    username:
-    url:
-    desc: Follow me on Pinterest
-    share: true
+#  - name: Instagram
+#    icon: instagram
+#    username:
+#    url:
+#    desc: Follow me on Instagram
+#    share: false
+
+#  - name: Pinterest
+#    icon: pinterest
+#    username:
+#    url:
+#    desc: Follow me on Pinterest
+#    share: true
 
   - name: SoundCloud
     icon: soundcloud
@@ -185,15 +185,15 @@ social:
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
-protocols:
-    fb_image: "/assets/logo.png"
-    fb_image_width: 612
-    fb_image_height: 605
-    fb_image_type: "image/png"
+#protocols:
+#    fb_image: "/assets/logo.png"
+#    fb_image_width: 612
+#    fb_image_height: 605
+#    fb_image_type: "image/png"
 
-    twitter_image: "/assets/logo.png"
+    #    twitter_image: "/assets/logo.png"
 
-    os_repo: "https://github.com/bencentra/centrarium.com"
-    os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
+    #    os_repo: "https://github.com/bencentra/centrarium.com"
+    #    os_rcs_type: "git"
+    #    os_src: "git@github.com:bencentra/centrarium.com.git"
 
