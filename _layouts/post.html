@@ -42,11 +42,11 @@ layout: default
 {% endif %}
 
 <section class="rss">
-  <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
+  <p class="rss-subscribe text"><strong>Writer : atomic0x90 (Yujun Han)</strong></p>
 </section>
 
 <section class="share">
-  <span>Share: </span>
+  <span></span>
   {% for social in site.social %}
     {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     {% if social.name == "Twitter" and social.share == true %}
