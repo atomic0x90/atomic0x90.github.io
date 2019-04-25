@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>atomic0x90</title>
-    <description>열심히 놀기 위해 열심히 공부하는 초보 개발자 / C / Data-Struct
+    <title>atomic0x90 (Yujun Han)</title>
+    <description>열심히 놀기 위해 열심히 공부하는 초보 개발자 / C / Data-Struct / Algorithm / The MIT License (MIT)
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Apr 2019 21:44:54 +0900</pubDate>
-    <lastBuildDate>Wed, 24 Apr 2019 21:44:54 +0900</lastBuildDate>
+    <pubDate>Thu, 25 Apr 2019 16:09:41 +0900</pubDate>
+    <lastBuildDate>Thu, 25 Apr 2019 16:09:41 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
