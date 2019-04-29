@@ -7,7 +7,6 @@ categories: Jekyll
 tags:	jekyll welcome
 cover:  "/assets/instacode.png"
 ---
-
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 ## Adding New Posts
@@ -65,6 +64,8 @@ For more information, check out the [Lightbox][lightbox] website.
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
+
+
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help
@@ -72,3 +73,5 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 [lightbox]:    http://lokeshdhakar.com/projects/lightbox2/
 [jekyll-archive]: https://github.com/jekyll/jekyll-archives
 [liquid]: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
