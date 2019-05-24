@@ -22,6 +22,7 @@ permalink: /about/
 
 1. OS : Linux / Ubuntu 18.04.2 LTS
 2. COMPILER
+  * vim version 8.0.1453
   * gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04)
   * g++ version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04)
 
