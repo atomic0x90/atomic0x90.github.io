@@ -61,7 +61,7 @@ cover: "/assets/instacode.png"
 
 
 
-[0]: https://atomic0x90.github.io/markdown/2019/05/24/markdown-문법-정리.html "markdown-문법-정리"
+[0]: https://atomic0x90.github.io/markdown/2019/05/24/markdown-문법-정리.html "markdown 문법 정리"
 [1]: https://atomic0x90.github.io/ "atomic0x90 (Yujun Han)"
 [2]: https://atomic0x90.github.io/posts/ "posts"
 
