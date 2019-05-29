@@ -49,6 +49,37 @@ cover: "/assets/instacode.png"
   * 어떤 문자를 8진수, 16진수를 이용하여 ASCII 코드로 표현 하려면 `'`(작은따옴표)로 감싸야 한다.
 
 
+## 이스케이프 시퀀스 사용 예시
+
+```c
+#include <stdioh>
+int main()
+{
+	char test_octal_number = '\141';		// \ooo
+	char test_hexadecimal_number = '\x41';		// \xhh
+
+	printf("%c \n",test_octal_number);		// \n
+	printf("%c \n",test_hexadecimal_number);
+
+	printf("AB\bC\n");		// \b
+
+	printf("T\tA\tB\n");		// \t
+
+	printf("123456\r789\n");	// \r
+
+	return 0;
+}
+```
+
+**결과**  
+```bash
+a 
+A 
+AC
+T	A	B
+789456
+```
+
 
 
 
