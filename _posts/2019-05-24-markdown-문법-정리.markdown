@@ -338,22 +338,25 @@ ___
 ## 표(table)
 
 `|` ([Vertical bar][2]) 를 이용하여 구역을 나눈다.  
-표(table) 안에 `|` 를 입력하고 싶으면 `&#124;` 를 입력한다.
+표(table) 안에 `|` 를 입력하고 싶으면 `&#124;` 를 입력한다.  
+표(table) 안에 위치를 정렬하고 싶으면 `:`([colon][00]) 을 이용한다.  
 
 **작성법**  
 ```md
-table1		| table2
-------		|-------
-test		| &#124; test &#124;
-Yujun Han	| atomic0x90
+table1		| table2			|table3
+:------:	|:-------			|------:
+Center alignment| &#124; Left alignment &#124;	|**Right alignment**
+가운데 정렬	|왼쪽 정렬			|오른쪽 정렬
+Yujun Han	| _**atomic0x90**_		|atomic0x90
 ```
 
 **결과**  
 
-table1 | table2
-------|-------
-test | &#124;test&#124;
-Yujun Han | atomic0x90
+table1		| table2			| table3
+:------:	|:-------			|------:
+Center alignment| &#124; Left alignment &#124;	| **Right alignment**
+가운데 정렬	|왼쪽 정렬			|오른쪽 정렬
+Yujun Han 	| _**atomic0x90**_ 		|atomic0x90
 
 ---
 ## 링크(link)
@@ -464,5 +467,6 @@ GOOGLE home page : https://www.google.com
 [3]: https://atomic0x90.github.io/ "atomic0x90 (Yujun Han)"
 [4]: https://atomic0x90.github.io/posts/ "posts"
 
+[00]: https://ko.wikipedia.org/wiki/쌍점#컴퓨터에서의_사용 "wikipedia"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
