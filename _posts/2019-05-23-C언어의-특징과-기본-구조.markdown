@@ -168,9 +168,9 @@ return 0;
 
 <strong>감사합니다.</strong>
 
-[홈으로 가기][9]
-
-[post 목록 보기][10]
+&nbsp;|[홈으로 가기][9]	|[post 목록 보기][10]	|[다음글 \>\>][11]
+------|:------:		|:------:		|------:
+|||
 
 
 
@@ -183,8 +183,9 @@ return 0;
 [6]: https://ko.wikipedia.org/wiki/주석_(프로그래밍) "wikipedia"
 [7]: https://ko.wikipedia.org/wiki/쌍반점#컴퓨터에서의_사용 "wikipedia"
 [8]: https://ko.wikipedia.org/wiki/예약어 "wikipedia"
-[9]: https://atomic0x90.github.io/ "atomic0x90 (Yujun Han)"
+[9]: https://atomic0x90.github.io/ "home"
 [10]: https://atomic0x90.github.io/posts/ "posts"
+[11]: http://127.0.0.1:4000/markdown/2019/05/25/markdown-문법-정리.html "markdown 문법 정리"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
