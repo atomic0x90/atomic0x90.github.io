@@ -188,7 +188,7 @@ return 0;
 [8]: https://ko.wikipedia.org/wiki/예약어 "wikipedia"
 [9]: https://atomic0x90.github.io/ "home"
 [10]: https://atomic0x90.github.io/posts/ "posts"
-[11]: http://127.0.0.1:4000/markdown/2019/05/25/markdown-문법-정리.html "markdown 문법 정리"
+[11]: https://atomic0x90.github.io/markdown/2019/05/24/markdown-Grammar-theorem.html "markdown 문법 정리"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 

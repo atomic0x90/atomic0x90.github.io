@@ -472,8 +472,8 @@ GOOGLE home page : https://www.google.com
 [4]: https://atomic0x90.github.io/posts/ "posts"
 
 [00]: https://ko.wikipedia.org/wiki/쌍점#컴퓨터에서의_사용 "wikipedia"
-[01]: https://atomic0x90.github.io/c-language/2019/05/23/C언어의-특징과-기본-구조.html "C언어의 특징과 기본 구조"
-[02]: https://atomic0x90.github.io/c-language/2019/05/28/C언어-이스케이프-시퀀스-escape-sequence.html "C언어 이스케이프 시퀀스(escape sequence)"
+[01]: https://atomic0x90.github.io/c-language/2019/05/23/Characteristics-and-structure-of-language-C.html "C언어의 특징과 기본 구조"
+[02]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "C언어 이스케이프 시퀀스(escape sequence)"
 
 
 
