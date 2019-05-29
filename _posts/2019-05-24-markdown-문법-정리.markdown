@@ -342,10 +342,10 @@ ___
 
 **작성법**  
 ```md
-table1 | table2
-------|-------
-test | &#124; test &#124;
-Yujun Han | atomic0x90
+table1		| table2
+------		|-------
+test		| &#124; test &#124;
+Yujun Han	| atomic0x90
 ```
 
 **결과**  
