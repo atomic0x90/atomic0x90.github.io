@@ -128,7 +128,7 @@ cover:  "/assets/instacode.png"
 [0]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "이스케이프 시퀀스 정리"
 [1]: https://atomic0x90.github.io/ "home"
 [2]: https://atomic0x90.github.io/posts/ "posts"
-[3]: https://atomic0x90.github.io/c-language/2019/05/30/ASCII.html "ASCII 코드(현재 페이지)"
+[3]: https://atomic0x90.github.io/c-language/2019/05/29/ASCII.html "ASCII 코드(현재 페이지)"
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
