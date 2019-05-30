@@ -89,7 +89,7 @@ T	A	B
 **감사합니다.**
 
 
-[\<\< 이전글][0]|[홈으로 가기][1]	|[post 목록 보기][2]	|다음글
+[\<\< 이전글][0]|[홈으로 가기][1]	|[post 목록 보기][2]	|[다음글 \>\>][3]
 ------		|:------:		|:------:		|------:
 |||
 
@@ -98,7 +98,7 @@ T	A	B
 [0]: https://atomic0x90.github.io/markdown/2019/05/24/markdown-Grammar-theorem.html "markdown 문법 정리"
 [1]: https://atomic0x90.github.io/ "home"
 [2]: https://atomic0x90.github.io/posts/ "posts"
-
+[3]: https://atomic0x90.github.io/c-language/2019/05/30/ASCII.html "ASCII 코드"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 

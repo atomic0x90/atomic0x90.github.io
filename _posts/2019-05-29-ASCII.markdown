@@ -1,0 +1,136 @@
+---
+layout: post
+title:  "아스키(ASCII) 코드"
+date:   2019-05-29 23:25:41
+author: atomic0x90 (Yujun Han)
+categories: C-Language
+tags:  C-Language
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## 아스키(ASCII) 코드란?
+
+영문 알파벳을 이용하는 문자 인코딩이다. 컴퓨터와 통신 장비 등 문자를 사용하는 장치에서 문자 인코딩을 사용한다. 
+아스키는 7비트 인코딩으로, 33개의 출력 불가능한 제어 문자들과 공백을 비롯한 95개의 출력 가능한 문자들로 총 128개로 이루어져 있다.  
+스페이스바 문자는 32로 표현한다.
+
+
+
+---
+
+## 아스키 코드 제어 문자표
+
+10진법(Dec)	|16진법(Hex)	|약어(Abbreviation)	|설명(explanation)		|한국어 설명
+:------:	|:------:	|:------:		|:------:			|:------:
+0		|0		|NUL			|NULL Character			|널 문자
+1		|1		|SOH			|Start of Header		|헤더 시작
+2		|2		|STX			|Start of Text			|본문 시작, 헤더 종료
+3		|3		|ETX			|End of Text			|본문 종료
+4		|4		|EOT			|End of Transmission		|전송 종료, 데이터 링크 초기화
+5		|5		|ENQ			|Enquiry			|응답 요구
+6		|6		|ACK			|Acknowledgment			|긍정 응답
+7		|7		|BEL			|Bell				|경고음
+8		|8		|BS			|Backspace			|백스페이스
+9		|9		|HT			|Horizontal Tab			|수평 탭
+10		|A		|LF			|Line feed			|개행
+11		|B		|VT			|Vertical Tab			|수직 탭
+12		|C		|FF			|Form feed			|다음 페이지
+13		|D		|CR			|Carriage return		|복귀
+14		|E		|SO			|Shift Out			|확장문자 시작
+15		|F		|SI			|Shift In			|확장문자 종료
+16		|10		|DLE			|Data Link Escape		|전송 제어 확장
+17		|11		|DC1			|Device Control 1		|장치 제어 1
+18		|12		|DC2			|Device Control 2		|장치 제어 2
+19		|13		|DC3			|Device Control 3		|장치 제어 3
+20		|14		|DC4			|Device Control 4		|장치 제어 4
+21		|15		|NAK			|Negative Acknowledgement	|부정 응답
+22		|16		|SYN			|Synchronous idle		|동기
+23		|17		|ETB			|End of Transmission Block	|전송블록 종료
+24		|18		|CAN			|Cancel				|무시
+25		|19		|EM			|End of Medium			|매체 종료
+26		|1A		|SUB			|Substitute			|치환
+27		|1B		|ESC			|Escape				|제어기능 추가
+28		|1C		|FS			|File Separator			|파일경계 할당
+29		|1D		|GS			|Group Separator		|레코드 그룹경계 할당
+30		|1E		|RS			|Record Separator		|레코드 경계 할당
+31		|1F		|US			|Unit Separator			|장치 경계 할당
+127		|7F		|DEL			|Delete				|삭제
+
+---
+
+## 아스키 코드 출력 가능 문자표
+
+10진법(Dec)	|16진법(Hex)	|모양(Shape)	|&#124;		|10진법(Dec)	|16진법(Hex)	|모양(Shape)
+:------:	|:------:	|:------:	|:------:	|:------:	|:------:	|:------:
+32		|20		|&nbsp;		|&#124;		|80		|50		|P
+33		|21		|!		|&#124;		|81		|51		|Q
+34		|22		|"		|&#124;		|82		|52		|R
+35		|23		|#		|&#124;		|83		|53		|S
+36		|24		|$		|&#124;		|84		|54		|T
+37		|25		|%		|&#124;		|85		|55		|U
+38		|26		|&		|&#124;		|86		|56		|V
+39		|27		|'		|&#124;		|87		|57		|W
+40		|28		|(		|&#124;		|88		|58		|X
+41		|29		|)		|&#124;		|89		|59		|Y
+42		|2A		|\*		|&#124;		|90		|5A		|Z
+43		|2B		|+		|&#124;		|91		|5B		|[
+44		|2C		|,		|&#124;		|92		|5C		|\\
+45		|2D		|-		|&#124;		|93		|5D		|]
+46		|2E		|.		|&#124;		|94		|5E		|^
+47		|2F		|/		|&#124;		|95		|5F		|\_
+48		|30		|0		|&#124;		|96		|60		|\`
+49		|31		|1		|&#124;		|97		|61		|a
+50		|32		|2		|&#124;		|98		|62		|b
+51		|33		|3		|&#124;		|99		|63		|c
+52		|34		|4		|&#124;		|100		|64		|d
+53		|35		|5		|&#124;		|101		|65		|e
+54		|36		|6		|&#124;		|102		|66		|f
+55		|37		|7		|&#124;		|103		|67		|g
+56		|38		|8		|&#124;		|104		|68		|h
+57		|39		|9		|&#124;		|105		|69		|i
+58		|3A		|:		|&#124;		|106		|6A		|j
+59		|3B		|;		|&#124;		|107		|6B		|k
+60		|3C		|<		|&#124;		|108		|6C		|l
+61		|3D		|=		|&#124;		|109		|6D		|m
+62		|3E		|>		|&#124;		|110		|6E		|n
+63		|3F		|?		|&#124;		|111		|6F		|o
+64		|40		|@		|&#124;		|112		|70		|p
+65		|41		|A		|&#124;		|113		|71		|q
+66		|42		|B		|&#124;		|114		|72		|r
+67		|43		|C		|&#124;		|115		|73		|s
+68		|44		|D		|&#124;		|116		|74		|t
+69		|45		|E		|&#124;		|117		|75		|u
+70		|46		|F		|&#124;		|118		|76		|v
+71		|47		|G		|&#124;		|119		|77		|w
+72		|48		|H		|&#124;		|120		|78		|x
+73		|49		|I		|&#124;		|121		|79		|y
+74		|4A		|J		|&#124;		|122		|7A		|z
+75		|4B		|K		|&#124;		|123		|7B		|{
+76		|4C		|L		|&#124;		|124		|7C		|&#124;
+77		|4D		|M		|&#124;		|125		|7D		|}
+78		|4E		|N		|&#124;		|126		|7E		|~
+79		|4F		|O		|&#124;		|&nbsp;		|&nbsp;		|&nbsp;
+
+
+
+**감사합니다.**
+
+
+
+[\<\< 이전글][0]|[홈으로 가기][1]       |[post 목록 보기][2]    |[다음글 \>\>][3]
+------          |:------:               |:------:               |------:
+|||
+
+
+[0]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "이스케이프 시퀀스 정리"
+[1]: https://atomic0x90.github.io/ "home"
+[2]: https://atomic0x90.github.io/posts/ "posts"
+[3]: https://atomic0x90.github.io/c-language/2019/05/30/ASCII.html "ASCII 코드(현재 페이지)"
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
