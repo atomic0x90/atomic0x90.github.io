@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "변수(variables)와 자료형(data types) 미완성(unfinished)"
+title:  "변수(variables)와 자료형(data types)"
 date:   2019-05-30 20:59:16
 author: atomic0x90 (Yujun Han)
 categories: C-Language
@@ -83,10 +83,10 @@ void		|\-		|\-
 자료형		|비트수		|범위
 :------:	|:------:	|:------:
 bool		|8		|0 ~ 1
-short		|16		|-32768 ~ 32767
-int		|32		|-2147483648 ~ 2147483647
-long		|32		|-2147483648 ~ 2147483647
-long long	|64		|-9223372036854775808 ~ 9223372036854775807
+short		|16		|-32,768 ~ 32,767
+int		|32		|-2,147,483,648 ~ 2,147,483,647
+long		|32		|-2,147,483,648 ~ 2,147,483,647
+long long	|64		|-9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
 
 ---
 
@@ -116,9 +116,9 @@ double		|64		|1.79E-308(-1.79\*10^308) ~ 1.79E+308(1.79\*10^308) (15digits)
 자료형		|비트수		|범위
 :------:	|:------:	|:------:
 unsigned char	|8		|0 ~ 255
-unsigned short	|		|0 ~ 65535
+unsigned short	|16		|0 ~ 65,535
 unsigned int	|32		|0 ~ 4,294,967,295
-
+unsigned long	|32		|0 ~ 4,294,967,295
 
 
 
@@ -140,11 +140,20 @@ char atomic0x90;	//자료형 : char, 변수이름 : atomic0x90
 
 
 
+**감사합니다.**
 
 
 
+[\<\< 이전글][0]|[홈으로 가기][1]       |[post 목록 보기][2]    |[다음글 \>\>][3]
+------          |:------:               |:------:               |------:
+|||
 
 
+
+[0]: https://atomic0x90.github.io/c-language/2019/05/29/ASCII.html "ASCII 코드"
+[1]: https://atomic0x90.github.io/ "home"
+[2]: https://atomic0x90.github.io/posts/ "posts"
+[3]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "현재 페이지"
 
 
 
