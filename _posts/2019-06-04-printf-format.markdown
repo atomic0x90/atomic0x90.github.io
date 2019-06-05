@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "출력 함수(printf)와 형식 지정자(format specifiers) ..작성중"
+title:  "출력 함수(printf)와 형식 지정자(format specifiers)"
 date:   2019-06-04 14:54:01
 author: atomic0x90 (Yujun Han)
 categories: C-Language
@@ -75,10 +75,159 @@ cover:  "/assets/instacode.png"
 
 ## 문자형
 
+형식 지정자	|의미			|예시				|실행 결과
+:------:	|:------:		|:-------:			|:------:
+%c		|문자			|printf("%c",'A');		|A
+%s		|문자열			|printf("%s","Test String");	|Test String
+
+---
+
+## 포인터
+
+
+형식 지정자	|의미
+:------:	|:------:
+%p		|포인터의 메모리 주소
+
+
+**예시**
+```c
+#include <stdio.h>
+int main()
+{
+	int test;
+	void *ptr = &test;
+
+	printf("%p\n",ptr);
+
+	return 0;
+}
+
+```
+**결과**
+```bash
+0x7ffcecb336ac
+```
+
+---
+
+## % 기호
+
+%를 출력하고 싶을 때
+```c
+printf("%");
+```
+이렇게 하면 좋지 않은 방식이다.  
+따라서 다음과 같이 사용한다.
 
 
 
+**올바른 예시**
+```c
+#include <stdio.h>
+int main()
+{
+	printf("%%\n");
+	return 0;
+}
+```
 
+**결과**
+```bash
+%
+```
+
+---
+
+## 형식 지정자 문법 사용하기
+
+**사용 예시**
+```c
+#include <stdio.h>
+int main()
+{
+	printf("↓ 1칸 공백\n");
+	printf("%4d\n",144);	//%d의 출력 넓이를 4로 지정, 남는 공간을 공백으로 채움
+	printf("%5d\n",144);	//%d의 출력 넓이를 5로 지정, 남는 공간을 공백으로 채움
+	printf("↑ 2칸 공백\n\n");
+	
+	printf("%04d\n",144);	//%d의 출력 넓이를 4로 지정, 남는 공간에 공백이 아닌 0으로 채움
+	printf("%05d\n\n",144);	//%d의 출력 넓이를 5로 지정, 남는 공간에 공백이 아닌 0으로 채움
+
+	printf("% d\n",144);	//양수일 때는 부호를 표시하지 않고 공백으로 표시
+	printf("% d\n\n",-144);	//음수일 때는 부호를 표시
+
+	printf("%+d\n",144);	//양수일 때는 +부호를 표시
+	printf("%+d\n\n",-144);	//음수일 때는 -부호를 표시
+
+	printf("%.2f\n",1.2);	//소수 둘째 자리 까지 표시
+	printf("%.2e\n\n",1.2);	//소수 둘째 자리 까지 표시, 지수도 표현
+
+	printf("%010.3f\n",1.2);//출력 넓이 10, 소수 3째 자리까지 표시, 남는 공간을 0으로 채움
+	printf("%010.3e\n\n",1.2);//출력 넓이 10, 소수 3째 자리까지 표시, 남는 공간을 0으로 채움, 지수도 표현
+
+	printf("%#o\n",19);	//8진수면 앞에 0을 표시함
+	printf("%#x\n",15);	//16진수 소문자 출력, 앞에 0x를 표시함
+	printf("%#X\n\n",0xa1);	//16진수 대문자 출력, 앞에 0X를 표시함
+
+	printf("↓ 4칸 공백\n");
+	printf("%5c\n",'S');	//출력 넓이를 5로 지정, 남는 공간을 공백으로 채움
+	printf("%5s\n","Test");	//출력 넓이를 5로 지정, 남는 공간을 공백으로 채움
+	printf("↑ 1칸 공백\n");
+
+	return 0;
+}
+```
+
+
+**실행 결과**
+```bash
+↓ 1칸 공백
+ 144
+  144
+↑ 2칸 공백
+
+0144
+00144
+
+ 144
+-144
+
++144
+-144
+
+1.20
+1.20e+00
+
+000001.200
+01.200e+00
+
+023
+0xf
+0XA1
+
+↓ 4칸 공백
+    S
+ Test
+↑ 1칸 공백
+```
+
+
+
+**감사합니다.**
+
+
+
+[\<\< 이전글][0]	|[홈으로 가기][1]       |[post 목록 보기][2]    |[다음글 \>\>][3]
+------        	  	|:------:               |:------:               |------:
+[변수와 자료형][0] 	|                       |                       |
+
+
+
+[0]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
+[1]: https://atomic0x90.github.io/ "home"
+[2]: https://atomic0x90.github.io/posts/ "posts"
+[3]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "현재 페이지"
 
 
 
