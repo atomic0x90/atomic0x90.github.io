@@ -19,6 +19,14 @@ cover:  "/assets/instacode.png"
 
 ---
 
+## 출력 함수(printf)의 원형
+
+```
+int printf (const char *format, ...)
+```
+
+---
+
 ## 형식 지정자(format specifiers)란?
 
 데이터들은 각자 다른 형태로 존재한다. 이러한 다양한 데이터들을 화면에 출력하기 위해서 각각 형식 지정자들이 있다. 
