@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "입력 함수(scanf)"
-date:   2019-06-04 20:54:40
+date:   2019-06-05 20:54:40
 author: atomic0x90 (Yujun Han)
 categories: C-Language
 tags:  C-Language
