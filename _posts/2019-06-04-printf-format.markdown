@@ -22,7 +22,7 @@ cover:  "/assets/instacode.png"
 ## 출력 함수(printf)의 원형
 
 ```
-int printf (const char *format, ...)
+int printf (const char *format, ...);
 ```
 
 ---
