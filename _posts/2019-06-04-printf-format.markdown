@@ -228,14 +228,14 @@ int main()
 
 [\<\< 이전글][0]	|[홈으로 가기][1]       |[post 목록 보기][2]    |[다음글 \>\>][3]
 ------        	  	|:------:               |:------:               |------:
-[변수와 자료형][0] 	|                       |                       |
+[변수와 자료형][0] 	|                       |                       |[scanf 함수][3]
 
 
 
 [0]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
 [1]: https://atomic0x90.github.io/ "home"
 [2]: https://atomic0x90.github.io/posts/ "posts"
-[3]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "현재 페이지"
+[3]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
 
 
 
