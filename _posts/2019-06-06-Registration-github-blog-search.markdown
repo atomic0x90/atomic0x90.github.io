@@ -135,13 +135,26 @@ layout: null
 </rss>
 ```
 
+---
+
+## 3. robots.txt 생성
+
+robots.txt는 앞서 만든 sitemap.xml의 위치를 등록해서 크롤링을 도와주는 역할이다. 
+`반드시 블로그 /root 경로에 robots.txt 파일을 만든다.`  
+robots.txt 파일에 다음과 같이 자신의 블로그 주소로 바꿔서 입력하고 저장한다.
+
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://atomic0x90.github.io/sitemap.xml
+```
+
+robots.txt를 자세하게 알고 싶으면 [이곳][0]을 눌러 확인하자.
 
 
 
 
 
-
-
-
-
+[0]: https://developers.google.com/search/reference/robots_txt "google"
 
