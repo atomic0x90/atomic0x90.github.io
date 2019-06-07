@@ -96,8 +96,44 @@ sitemap :
 
 
 
+---
 
+## 2. RSS feed 만들기
 
+`반드시 블로그 /root 경로에 feed.xml 파일을 만든다.` feed.xml 파일에 다음 전체 내용을 그대로 복사하고 저장한다.
+
+```
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{% raw %}{{ site.title | xml_escape }}{% endraw %}</title>
+    <description>{% raw %}{{ site.description | xml_escape }}{% endraw %}</description>
+    <link>{% raw %}{{ site.url }}{% endraw %}{% raw %}{{ site.baseurl }}{% endraw %}/</link>
+    <atom:link href="{% raw %}{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}{% endraw %}" rel="self" type="application/rss+xml"/>
+    <pubDate>{% raw %}{{ site.time | date_to_rfc822 }}{% endraw %}</pubDate>
+    <lastBuildDate>{% raw %}{{ site.time | date_to_rfc822 }}{% endraw %}</lastBuildDate>
+    <generator>Jekyll v{% raw %}{{ jekyll.version }}{% endraw %}</generator>
+    {% raw %}{% for post in site.posts limit:30 %}{% endraw %}
+      <item>
+        <title>{% raw %}{{ post.title | xml_escape }}{% endraw %}</title>
+        <description>{% raw %}{{ post.content | xml_escape }}{% endraw %}</description>
+        <pubDate>{% raw %}{{ post.date | date_to_rfc822 }}{% endraw %}</pubDate>
+        <link>{% raw %}{{ post.url | prepend: site.baseurl | prepend: site.url }}{% endraw %}</link>
+        <guid isPermaLink="true">{% raw %}{{ post.url | prepend: site.baseurl | prepend: site.url }}{% endraw %}</guid>
+        {% raw %}{% for tag in post.tags %}{% endraw %}
+        <category>{% raw %}{{ tag | xml_escape }}{% endraw %}</category>
+        {% raw %}{% endfor %}{% endraw %}
+        {% raw %}{% for cat in post.categories %}{% endraw %}
+        <category>{% raw %}{{ cat | xml_escape }}{% endraw %}</category>
+        {% raw %}{% endfor %}{% endraw %}
+      </item>
+    {% raw %}{% endfor %}{% endraw %}
+  </channel>
+</rss>
+```
 
 
 
