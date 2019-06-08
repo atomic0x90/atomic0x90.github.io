@@ -149,7 +149,7 @@ scanf에 &를 사용하는 이유를 알기 위해서는 메모리의 주소에 
 
 [\<\< 이전글][3]		|[홈으로 가기][4]	|[post 목록 보기][5]	|[다음글 \>\>][6]
 ------				|:------:		|:------:		|------:
-[printf 함수와 형식 지정자][3]	|			|			|
+[printf 함수와 형식 지정자][3]	|			|			|[Github blog를 검색이 되게 설정하기][6]
 
 
 
@@ -159,7 +159,7 @@ scanf에 &를 사용하는 이유를 알기 위해서는 메모리의 주소에 
 [3]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
 [4]: https://atomic0x90.github.io/ "home"
 [5]: https://atomic0x90.github.io/posts/ "posts"
-[6]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "현재 페이지"
+[6]: https://atomic0x90.github.io/jekyll/2019/06/06/Registration-github-blog-search.html "Github blog를 검색이 되게 설정하기"
 
 
 
