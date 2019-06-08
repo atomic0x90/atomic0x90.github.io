@@ -192,7 +192,7 @@ git에 commit, push를 한 뒤 자신이 소유한 블로그임을 인증한다.
 
 [\<\< 이전글][5]	|[홈으로 가기][3]       |[post 목록 보기][4]    |[다음글 \>\>][6]
 ------			|:------:               |:------:               |------:
-[입력 함수(scanf)][5]	|                       |                       |
+[입력 함수(scanf)][5]	|                       |                       |[escape liquid template][6]
 
 
 
@@ -207,7 +207,8 @@ git에 commit, push를 한 뒤 자신이 소유한 블로그임을 인증한다.
 [3]: https://atomic0x90.github.io/ "home"
 [4]: https://atomic0x90.github.io/posts/ "posts"
 [5]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수(scanf)"
-[6]: https://atomic0x90.github.io/jekyll/2019/06/06/Registration-github-blog-search.html "현재 페이지"
+[6]: https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html "escape liquid template"
+
 
 
 
