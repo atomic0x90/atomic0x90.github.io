@@ -43,7 +43,7 @@ raw tag를 이용해서 앞뒤로 감싸주면 다음과 같이 마크다운 문
 
 [\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |[다음글 \>\>][4]
 ------                  |:------:               |:------:               |------:
-[Github blog를 검색이 되게 설정하기][1]   |                       |                       |
+[Github blog를 검색이 되게 설정하기][1]   |                       |                       |[Ubuntu에서 이미지 편집기 사용하기][4]
 
 
 
@@ -59,7 +59,7 @@ raw tag를 이용해서 앞뒤로 감싸주면 다음과 같이 마크다운 문
 [1]: https://atomic0x90.github.io/jekyll/2019/06/06/Registration-github-blog-search.html "Github blog를 검색이 되게 설정하기"
 [2]: https://atomic0x90.github.io/ "home"
 [3]: https://atomic0x90.github.io/posts/ "posts"
-[4]: https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html "현재 페이지"
+[4]: https://atomic0x90.github.io/ubuntu/2019/06/09/ubuntu-image-editor.html "Ubuntu에서 이미지 편집기 사용하기"
 
 
 
