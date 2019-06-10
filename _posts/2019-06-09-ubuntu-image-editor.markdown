@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ubuntu에서 이미지 편집기 사용하기"
-date:   2019-06-07 22:32:23
+date:   2019-06-09 22:32:23
 author: atomic0x90 (Yujun Han)
 categories: ubuntu
 tags:  ubuntu
