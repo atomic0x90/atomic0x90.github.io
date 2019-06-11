@@ -171,9 +171,21 @@ return 0;
 
 <strong>감사합니다.</strong>
 
+---
+
+### Related Posts
+
+**[이스케이프 시퀀스 정리(escape sequence)][00]**
+
+**[ASCII 코드(ASCII code)][01]**
+
+**[변수와 자료형(variables, data types)][02]**
+
+---
+
 &nbsp;	|[홈으로 가기][9]	|[post 목록 보기][10]	|[다음글 \>\>][11]
 ------	|:------:		|:------:		|------:
-	|			|			|[markdown 문법 정리][11]
+	|			|			|**[markdown 문법 정리][11]**
 
 
 
@@ -189,6 +201,12 @@ return 0;
 [9]: https://atomic0x90.github.io/ "home"
 [10]: https://atomic0x90.github.io/posts/ "posts"
 [11]: https://atomic0x90.github.io/markdown/2019/05/24/markdown-Grammar-theorem.html "markdown 문법 정리"
+
+[00]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "escape sequence"
+[01]: https://atomic0x90.github.io/c-language/2019/05/29/ASCII.html "ASCII code"
+[02]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
+
+
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 

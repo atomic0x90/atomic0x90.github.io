@@ -142,11 +142,24 @@ char atomic0x90;	//자료형 : char, 변수이름 : atomic0x90
 
 **감사합니다.**
 
+---
+
+### Related Posts
+
+**[출력 함수와 형식 지정자(printf, format specifiers)][00]**
+
+**[입력 함수(scanf)][01]**
+
+**[이스케이프 시퀀스 정리(escape sequence)][02]**
+
+---
+
+
 
 
 [\<\< 이전글][0]|[홈으로 가기][1]       |[post 목록 보기][2]    |[다음글 \>\>][3]
 ------          |:------:               |:------:               |------:
-[ASCII 코드][0]	|			|			|[출력 함수와 형식 지정자][3]
+**[ASCII 코드][0]**	|			|			|**[출력 함수와 형식 지정자][3]**
 
 
 
@@ -155,6 +168,9 @@ char atomic0x90;	//자료형 : char, 변수이름 : atomic0x90
 [2]: https://atomic0x90.github.io/posts/ "posts"
 [3]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
 
+[00]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
+[01]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
+[02]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "이스케이프 시퀀스 정리"
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}

@@ -457,10 +457,17 @@ GOOGLE home page : https://www.google.com
 
 **감사합니다.**
 
+---
+
+### Related Posts
+
+**[jekyll 에서 {%raw%}{{ }}{%endraw%}, {%raw%}{% %}{%endraw%}사용하기(escape liquid template)][03]**
+
+---
 
 [\<\< 이전글][01]		|[홈으로 가기][3]	|[post 목록 보기][4]	|[다음글 \>\>][02]
 ------				|:------:		|:------:		|------:
-[C언어의 특징과 기본 구조][01]	|			|			|[C언어 이스케이프 시퀀스][02]
+**[C언어의 특징과 기본 구조][01]**	|			|			|**[C언어 이스케이프 시퀀스][02]**
 
 
 
@@ -474,7 +481,6 @@ GOOGLE home page : https://www.google.com
 [00]: https://ko.wikipedia.org/wiki/쌍점#컴퓨터에서의_사용 "wikipedia"
 [01]: https://atomic0x90.github.io/c-language/2019/05/23/Characteristics-and-structure-of-language-C.html "C언어의 특징과 기본 구조"
 [02]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "C언어 이스케이프 시퀀스(escape sequence)"
-
-
+[03]: https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html "escape liquid template"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
