@@ -44,7 +44,7 @@ Ubuntu 검색창에 kolourpaint를 검색하고 실행해도 된다.
 
 [\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |다음글 \>\>
 ------                  |:------:               |:------:               |------:
-[escape liquid template][1]   |                       |                       |
+**[escape liquid template][1]**   |                       |                       |
 
 
 

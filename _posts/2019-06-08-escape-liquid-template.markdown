@@ -40,10 +40,18 @@ raw tag를 이용해서 앞뒤로 감싸주면 다음과 같이 마크다운 문
 
 **감사합니다.**
 
+---
+
+### Related Posts
+
+**[마크다운(markdown) 문법 정리][00]**
+
+---
+
 
 [\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |[다음글 \>\>][4]
 ------                  |:------:               |:------:               |------:
-[Github blog를 검색이 되게 설정하기][1]   |                       |                       |[Ubuntu에서 이미지 편집기 사용하기][4]
+**[Github blog를 검색이 되게 설정하기][1]**   |                       |   |**[Ubuntu에서 이미지 편집기 사용하기][4]**
 
 
 
@@ -62,7 +70,7 @@ raw tag를 이용해서 앞뒤로 감싸주면 다음과 같이 마크다운 문
 [4]: https://atomic0x90.github.io/ubuntu/2019/06/09/ubuntu-image-editor.html "Ubuntu에서 이미지 편집기 사용하기"
 
 
-
+[00]: https://atomic0x90.github.io/markdown/2019/05/24/markdown-Grammar-theorem.html "마크다운 문법 정리"
 
 
 

@@ -189,10 +189,19 @@ git에 commit, push를 한 뒤 자신이 소유한 블로그임을 인증한다.
 
 **감사합니다.**
 
+---
+
+### Related Posts
+
+**[jekyll에서 {%raw%}{{ }}{%endraw%}, {%raw%}{% %}{%endraw%}사용하기(escape liquid template)][00]**
+
+---
+
+
 
 [\<\< 이전글][5]	|[홈으로 가기][3]       |[post 목록 보기][4]    |[다음글 \>\>][6]
 ------			|:------:               |:------:               |------:
-[입력 함수(scanf)][5]	|                       |                       |[escape liquid template][6]
+**[입력 함수(scanf)][5]**	|                       |                       |**[escape liquid template][6]**
 
 
 
@@ -209,7 +218,7 @@ git에 commit, push를 한 뒤 자신이 소유한 블로그임을 인증한다.
 [5]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수(scanf)"
 [6]: https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html "escape liquid template"
 
-
+[00]: https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html "escape liquid template"
 
 
 

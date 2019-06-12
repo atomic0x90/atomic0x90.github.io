@@ -145,11 +145,22 @@ scanf에 &를 사용하는 이유를 알기 위해서는 메모리의 주소에 
 
 **감사합니다.**
 
+---
+
+### Related Posts
+
+**[출력 함수와 형식 지정자(printf, format specifiers)][00]**
+
+**[이스케이프 시퀀스(escape sequence)][01]**
+
+**[변수와 자료형(variables, data types)][02]**
+
+---
 
 
 [\<\< 이전글][3]		|[홈으로 가기][4]	|[post 목록 보기][5]	|[다음글 \>\>][6]
 ------				|:------:		|:------:		|------:
-[printf 함수와 형식 지정자][3]	|			|			|[Github blog를 검색이 되게 설정하기][6]
+**[printf 함수와 형식 지정자][3]**	|			|			|**[Github blog를 검색이 되게 설정하기][6]**
 
 
 
@@ -160,6 +171,10 @@ scanf에 &를 사용하는 이유를 알기 위해서는 메모리의 주소에 
 [4]: https://atomic0x90.github.io/ "home"
 [5]: https://atomic0x90.github.io/posts/ "posts"
 [6]: https://atomic0x90.github.io/jekyll/2019/06/06/Registration-github-blog-search.html "Github blog를 검색이 되게 설정하기"
+
+[00]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
+[01]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "escape sequence"
+[02]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
 
 
 
