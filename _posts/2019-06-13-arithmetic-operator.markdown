@@ -137,6 +137,16 @@ int main()
 
 **감사합니다.**
 
+---
+
+### Related Posts
+
+**[출력 함수와 형식 지정자(printf, format specifiers][3]**
+
+**[입력 함수(scanf)][4]**
+
+---
+
 
 [\<\< 이전글][0]        |[홈으로 가기][1]       |[post 목록 보기][2]    |다음글 \>\>
 ------                  |:------:               |:------:               |------:
@@ -146,7 +156,8 @@ int main()
 [0]: https://atomic0x90.github.io/ubuntu/2019/06/09/ubuntu-image-editor.html "Ubuntu에서 이미지 편집기 사용하기"
 [1]: https://atomic0x90.github.io/ "home"
 [2]: https://atomic0x90.github.io/posts/ "posts"
-
+[3]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
+[4]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
 
 
 
