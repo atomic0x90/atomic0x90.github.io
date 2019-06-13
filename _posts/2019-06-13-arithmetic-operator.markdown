@@ -141,7 +141,7 @@ int main()
 
 ### Related Posts
 
-**[출력 함수와 형식 지정자(printf, format specifiers][3]**
+**[출력 함수와 형식 지정자(printf, format specifiers)][3]**
 
 **[입력 함수(scanf)][4]**
 
