@@ -42,9 +42,9 @@ Ubuntu 검색창에 kolourpaint를 검색하고 실행해도 된다.
 **감사합니다.**
 
 
-[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |다음글 \>\>
+[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |[다음글 \>\>][4]
 ------                  |:------:               |:------:               |------:
-**[escape liquid template][1]**   |                       |                       |
+**[escape liquid template][1]**   |                       |                       |**[산술 연산자,연산자와 피연산자][4]**
 
 
 
@@ -57,7 +57,7 @@ Ubuntu 검색창에 kolourpaint를 검색하고 실행해도 된다.
 [1]: https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html "escape liquid template"
 [2]: https://atomic0x90.github.io/ "home"
 [3]: https://atomic0x90.github.io/posts/ "posts"
-
+[4]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "arithmetic operator, operator, operand"
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
