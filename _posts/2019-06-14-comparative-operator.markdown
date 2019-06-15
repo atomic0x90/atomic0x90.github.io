@@ -76,15 +76,34 @@ a != c : 1
 ```
 
 
+**감사합니다.**
+
+---
+
+### Related Posts
+
+**[출력 함수와 형식 지정자(printf, format specifiers)][4]**
+
+**[입력 함수(scanf)][5]**
+
+**[산술 연산자(arithmetic operator)][1]**
+
+---
 
 
 
+[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |다음글 \>\>
+------                  |:------:               |:------:               |------:
+**[산술 연산자(arithmetic operator)][1]**   |                       |                       |
 
 
 
 [0]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "operator and operand"
-
-
+[1]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
+[2]: https://atomic0x90.github.io/ "home"
+[3]: https://atomic0x90.github.io/posts/ "posts"
+[4]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
+[5]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
