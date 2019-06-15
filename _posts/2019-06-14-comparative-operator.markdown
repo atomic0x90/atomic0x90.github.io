@@ -35,8 +35,45 @@ cover:  "/assets/instacode.png"
 크거나 같음	|>=		|a >= b		|a가 b보다 크거나 같음
 작거나 같음	|<=		|a <= b		|a가 b보다 작거나 같음
 
+**예시**
+
+```c
+#include <stdio.h>
+int main()
+{
+        int a = 10, b = 10, c = 12;
+
+        printf("a = 10, b = 10, c = 12\n");
+        printf("a == b : %d\n",a == b);
+        printf("a != b : %d\n",a != b);
+        printf("a > b  : %d\n",a > b);
+        printf("a < b  : %d\n",a < b);
+
+        printf("a >= b : %d\n",a >= b);
+        printf("a <= b : %d\n",a <= b);
+        printf("a == c : %d\n",a == c);
+        printf("a != c : %d\n",a != c);
+
+        return 0;
+}
+```
 
 
+**실행 결과**
+
+논리식이 참일 경우에는 1이고 논리식이 거짓일 경우에는 0이다.
+
+```bash
+a = 10, b = 10, c = 12
+a == b : 1
+a != b : 0
+a > b  : 0
+a < b  : 0
+a >= b : 1
+a <= b : 1
+a == c : 0
+a != c : 1
+```
 
 
 
