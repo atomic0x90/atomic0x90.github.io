@@ -37,7 +37,8 @@ cover:  "/assets/instacode.png"
 
 ## 논리 회로
 
-논리 연산자의 기본이 되는 논리 회로의 **AND 게이트**, **OR 게이트**, **NOT 게이트**의 
+C 언어에서의 &&는 AND 게이트, \|\|는 OR 게이트, !은 NOT 게이트에 해당한다. 
+이처럼 논리 연산자의 기본이 되는 논리 회로의 **AND 게이트**, **OR 게이트**, **NOT 게이트**의 
 작동 원리(진리표)를 알면 논리 연산자가 이해가 된다.
 
 * AND 게이트 진리표 
@@ -72,6 +73,55 @@ OR 게이트는 명제가 한 가지라도 참이면 결과가 참이다.
 거짓(0)		|참(1)
 
 NOT 게이트의 결과는 명제의 반대 값이다.
+
+---
+
+**예시**
+
+```c
+#include <stdio.h>
+int main()
+{
+        int a = 1, b = 0;
+
+        printf("a = 1, b = 0\n\n");
+
+        printf("a && a : %d\n",a && a);
+        printf("a && b : %d\n",a && b);
+        printf("b && a : %d\n",b && a);
+        printf("b && b : %d\n\n",b && b);
+
+        printf("a || a : %d\n",a || a);
+        printf("a || b : %d\n",a || b);
+        printf("b || a : %d\n",b || a);
+        printf("b || b : %d\n\n",b || b);
+
+        printf("!a : %d\n",!a);
+        printf("!b : %d\n",!b);
+        return 0;
+}
+```
+
+**실행 결과**
+
+```bash
+a = 1, b = 0
+
+a && a : 1
+a && b : 0
+b && a : 0
+b && b : 0
+
+a || a : 1
+a || b : 1
+b || a : 1
+b || b : 0
+
+!a : 0
+!b : 1
+```
+
+
 
 
 
