@@ -122,6 +122,29 @@ b || b : 0
 ```
 
 
+**감사합니다.**
+
+
+---
+
+### Related Posts
+
+**[출력 함수와 형식 지정자(printf, format specifiers)][1]**
+
+**[입력 함수(scanf)][2]**
+
+**[산술 연산자(arithmetic operator)][3]**
+
+**[비교 연산자(comparative operator)][4]**
+
+---
+
+
+
+[\<\< 이전글][5]        |[홈으로 가기][6]       |[post 목록 보기][7]    |다음글 \>\>
+------                  |:------:               |:------:               |------:
+**[비교 연산자(comparative operator)][5]**   |                       |                       |
+
 
 
 
@@ -131,5 +154,28 @@ b || b : 0
 
 
 [0]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "operator and operand"
+[1]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
+[2]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
+[3]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
+[4]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
+[5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
+[6]: https://atomic0x90.github.io/ "home"
+[7]: https://atomic0x90.github.io/posts/ "posts"
+
+
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
