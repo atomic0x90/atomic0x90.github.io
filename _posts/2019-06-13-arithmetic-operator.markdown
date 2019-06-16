@@ -147,6 +147,8 @@ int main()
 
 **[비교 연산자(comparative operator)][5]**
 
+**[논리 연산자(logical operator)][6]**
+
 ---
 
 
@@ -161,7 +163,7 @@ int main()
 [3]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
 [4]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
 [5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
-
+[6]: https://atomic0x90.github.io/c-language/2019/06/15/logical-operator.html "논리 연산자"
 
 
 

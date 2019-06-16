@@ -88,6 +88,8 @@ a != c : 1
 
 **[산술 연산자(arithmetic operator)][1]**
 
+**[논리 연산자(logical operator)][6]**
+
 ---
 
 
