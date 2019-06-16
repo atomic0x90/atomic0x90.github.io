@@ -92,9 +92,9 @@ a != c : 1
 
 
 
-[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |다음글 \>\>
+[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |[다음글 \>\>][6]
 ------                  |:------:               |:------:               |------:
-**[산술 연산자(arithmetic operator)][1]**   |                       |                       |
+**[산술 연산자(arithmetic operator)][1]**   |                       |                       |**[논리 연산자(logical operator)][6]**
 
 
 
@@ -104,6 +104,22 @@ a != c : 1
 [3]: https://atomic0x90.github.io/posts/ "posts"
 [4]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
 [5]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
+[6]: https://atomic0x90.github.io/c-language/2019/06/15/logical-operator.html "논리 연산자"
+
+
+
+
+
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
+
+
+
+
+
+
+
+
