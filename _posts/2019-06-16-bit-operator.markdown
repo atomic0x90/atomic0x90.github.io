@@ -65,8 +65,8 @@ XOR		|^		|a ^ b
 [1]: https://atomic0x90.github.io/c-language/2019/06/15/logical-operator.html "논리 연산자"
 [2]: https://atomic0x90.github.io/ "home"
 [3]: https://atomic0x90.github.io/posts/ "posts"
-[3]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
-[4]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
+[4]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
+[5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
