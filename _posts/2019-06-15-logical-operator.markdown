@@ -137,6 +137,8 @@ b || b : 0
 
 **[비교 연산자(comparative operator)][4]**
 
+**[비트 연산자(bit operator)][8]**
+
 ---
 
 
