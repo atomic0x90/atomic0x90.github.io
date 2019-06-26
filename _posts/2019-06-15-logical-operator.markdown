@@ -141,9 +141,9 @@ b || b : 0
 
 
 
-[\<\< 이전글][5]        |[홈으로 가기][6]       |[post 목록 보기][7]    |다음글 \>\>
+[\<\< 이전글][5]        |[홈으로 가기][6]       |[post 목록 보기][7]    |[다음글 \>\>][8]
 ------                  |:------:               |:------:               |------:
-**[비교 연산자(comparative operator)][5]**   |                       |                       |
+**[비교 연산자(comparative operator)][5]**   |                       |                       |**[비트 연산자(bit operator)][8]**
 
 
 
@@ -161,7 +161,7 @@ b || b : 0
 [5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
 [6]: https://atomic0x90.github.io/ "home"
 [7]: https://atomic0x90.github.io/posts/ "posts"
-
+[8]: https://atomic0x90.github.io/c-language/2019/06/16/bit-operator.html "비트 연산자"
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
