@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C언어 비트 연산자(bit operator) ..작성중"
+title:  "C언어 비트 연산자(bit operator)"
 date:   2019-06-16 23:40:01
 author: atomic0x90 (Yujun Han)
 categories: C-Language
@@ -37,14 +37,36 @@ XOR		|^		|a ^ b
 
 
 
+**감사합니다.**
+
+
+---
+
+### Related Posts
+
+**[산술 연산자(arithmetic operator)][4]**
+
+**[비교 연산자(comparative operator)][5]**
+
+**[논리 연산자(logical operator)][1]**
+
+---
+
+
+
+[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |다음글 \>\>
+------                  |:------:               |:------:               |------:
+**[논리 연산자(logical operator)][1]**   |                       |                       |
 
 
 
 
 [0]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "operator and operand"
-
-
-
+[1]: https://atomic0x90.github.io/c-language/2019/06/15/logical-operator.html "논리 연산자"
+[2]: https://atomic0x90.github.io/ "home"
+[3]: https://atomic0x90.github.io/posts/ "posts"
+[3]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
+[4]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
