@@ -67,7 +67,7 @@ XOR		|^		|a ^ b
 [3]: https://atomic0x90.github.io/posts/ "posts"
 [4]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
 [5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
-[6]: https://atomic0x90.github.io/c-language/2020/02/07/assignment-operator.html "대입, 복합 연산자"
+[6]: https://atomic0x90.github.io/c-language/2019/06/17/assignment-operator.html "대입, 복합 연산자"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 

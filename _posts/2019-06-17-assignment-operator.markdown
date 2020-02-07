@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C언어 대입 연산자(assignment operator), 복합 연산자(compound operator)"
-date:   2020-02-06 20:01:16
+date:   2019-06-17 20:01:16
 author: atomic0x90 (Yujun Han)
 categories: C-Language
 tags:  C-Language
@@ -13,14 +13,14 @@ cover:  "/assets/instacode.png"
 
 ## 대입 연산자(assignment operator)란?
 
-대입 연산자는 변수에 값을 저장하는 연산자이다. `=` 기호가 바로 대입 연산자 이다.
+대입 연산자는 변수에 값을 저장하는 연산자이다. `=` 기호가 바로 대입 연산자이다.
 `=`의 왼쪽은 반드시 변수이어야 하고 등호의 오른쪽은 모든 수식이 가능하다.
 
 **예시**
 ```c
 x = 10 + 20;
 ```
-변수 x에 10 + 20 의 값이 대입 된다.
+변수 x에 10 + 20의 값이 대입된다.
 
 
 **잘못된 예시**
@@ -102,9 +102,9 @@ a %= b : 1
 
 ---
 
-[\<\< 이전글][8]        |[홈으로 가기][6]       |[post 목록 보기][7]    |다음글 \>\>
+[\<\< 이전글][8]        |[홈으로 가기][6]       |[post 목록 보기][7]    |[다음글 \>\>][9]
 ------                  |:------:               |:------:               |------:
-**[비트 연산자(bit operator)][8]**   |                       |                      	|
+**[비트 연산자(bit operator)][8]**   |                       |                      	|**[삼 항 연산자(ternary operator)][9]**
 
 
 [1]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
@@ -113,6 +113,7 @@ a %= b : 1
 [6]: https://atomic0x90.github.io/ "home"
 [7]: https://atomic0x90.github.io/posts/ "posts"
 [8]: https://atomic0x90.github.io/c-language/2019/06/16/bit-operator.html "비트 연산자"
+[9]: https://atomic0x90.github.io/c-language/2019/06/18/ternary-operator.html "삼 항 연산자"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
