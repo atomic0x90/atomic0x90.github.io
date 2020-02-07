@@ -54,9 +54,9 @@ XOR		|^		|a ^ b
 
 
 
-[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |다음글 \>\>
+[\<\< 이전글][1]        |[홈으로 가기][2]       |[post 목록 보기][3]    |[다음글 \>\>][6]
 ------                  |:------:               |:------:               |------:
-**[논리 연산자(logical operator)][1]**   |                       |                       |
+**[논리 연산자(logical operator)][1]**   |                       |                       |**[대입, 복합 연산자(assignment, compound operator)][6]**
 
 
 
@@ -67,6 +67,7 @@ XOR		|^		|a ^ b
 [3]: https://atomic0x90.github.io/posts/ "posts"
 [4]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
 [5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
+[6]: https://atomic0x90.github.io/c-language/2020/02/07/assignment-operator.html "대입, 복합 연산자"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
