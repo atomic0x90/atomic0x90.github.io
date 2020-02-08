@@ -62,9 +62,9 @@ a : 20
 
 ---
 
-[\<\< 이전글][2]        |[홈으로 가기][6]       |[post 목록 보기][7]    |다음글 \>\>
+[\<\< 이전글][2]        |[홈으로 가기][6]       |[post 목록 보기][7]    |[다음글 \>\>][8]
 ------                  |:------:               |:------:               |------:
-**[대입 연산자(assignment operator), 복합 연산자(compound operator)][2]**   |                       |                          |
+**[대입 연산자(assignment operator), 복합 연산자(compound operator)][2]**   |                       |**[연산자의 우선순위(operator priority, precedence)][8]**                          |
 
 
 
@@ -73,7 +73,7 @@ a : 20
 [4]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
 [6]: https://atomic0x90.github.io/ "home"
 [7]: https://atomic0x90.github.io/posts/ "posts"
-
+[8]: https://atomic0x90.github.io/c-language/2020/02/07/operator-priority.html "연산자의 우선순위"
 
 
 

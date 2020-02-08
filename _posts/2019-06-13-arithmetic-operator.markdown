@@ -141,6 +141,8 @@ int main()
 
 ### Related Posts
 
+**[연산자의 우선순위(operator priority, precedence)][00]**
+
 **[출력 함수와 형식 지정자(printf, format specifiers)][3]**
 
 **[입력 함수(scanf)][4]**
@@ -165,7 +167,7 @@ int main()
 [5]: https://atomic0x90.github.io/c-language/2019/06/14/comparative-operator.html "비교 연산자"
 [6]: https://atomic0x90.github.io/c-language/2019/06/15/logical-operator.html "논리 연산자"
 
-
+[00]: https://atomic0x90.github.io/c-language/2020/02/07/operator-priority.html "연산자의 우선순위"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
