@@ -14,6 +14,8 @@ cover:  "/assets/instacode.png"
 
 ## BOJ - 2557 - Hello World
 
+---
+
 **code**
 ```cpp
 #include <iostream>
@@ -36,7 +38,7 @@ int main()
 :------:		|:------:				|:------:
 			|					|
 
-[00]: https://atomic0x90.github.io/posts/#boj "Beakjoon post"
+[00]: https://atomic0x90.github.io/posts/#BOJ "Beakjoon post"
 [01]: https://atomic0x90.github.io/ "home"
 [02]: https://atomic0x90.github.io/posts/ "posts"
 
