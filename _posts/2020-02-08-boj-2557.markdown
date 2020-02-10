@@ -3,7 +3,7 @@ layout: post
 title:  "백준 2557"
 date:   2020-02-08 00:49:34
 author: atomic0x90 (Yujun Han)
-categories: Beakjoon-Online-Judge
+categories: BOJ
 tags:  BOJ
 sitemap :
   changefreq : daily
@@ -12,7 +12,7 @@ cover:  "/assets/instacode.png"
 ---
 
 
-## BOJ - Hello World
+## BOJ - 2557 - Hello World
 
 **code**
 ```cpp
@@ -36,7 +36,7 @@ int main()
 :------:		|:------:				|:------:
 			|					|
 
-[00]: https://atomic0x90.github.io/posts/#beakjoon-online-judge "Beakjoon post"
+[00]: https://atomic0x90.github.io/posts/#boj "Beakjoon post"
 [01]: https://atomic0x90.github.io/ "home"
 [02]: https://atomic0x90.github.io/posts/ "posts"
 
