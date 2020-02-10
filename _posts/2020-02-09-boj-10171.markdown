@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "백준 10171"
+date:   2020-02-09 10:30:05
+author: atomic0x90 (Yujun Han)
+categories: BOJ
+tags:  BOJ
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+
+## BOJ - 10171 - 고양이
+
+---
+
+**설명**
+
+\\ 를 문자 상수로 사용하는 법을 알아야 한다.
+
+[\\ 를 문자 상수로 사용하는 법 알아보기][10]
+
+---
+
+**code**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout<<"\\    /\\"<<endl;
+	cout<<" )  ( ')"<<endl;
+	cout<<"(  /  )"<<endl;
+	cout<<" \\(__)|"<<endl;
+
+	return 0;
+}
+```
+
+**감사합니다.**
+
+---
+
+[홈으로 가기][01]       |[더 많은 백준 문제 풀이 보기][00]      |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+[00]: https://atomic0x90.github.io/posts/#BOJ "Beakjoon post"
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+
+[10]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "이스케이프 시퀀스"
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
