@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "백준 1008"
+date:   2020-02-13 10:06:00
+author: atomic0x90 (Yujun Han)
+categories: BOJ
+tags:  BOJ
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+
+## BOJ - 1008 - A/B
+
+---
+
+**설명**
+
+소수점 개수 출력 범위를 조절할 줄 알아야 한다.
+
+[C++ 소수점 개수 출력하는 법 알아보기][10]
+
+
+---
+
+**code**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        double a,b;
+
+        cin>>a>>b;
+
+        cout<<fixed;
+        cout.precision(10);
+        cout<<a/b<<endl;
+
+        return 0;
+}
+```
+
+
+
+**감사합니다.**
+
+---
+
+[홈으로 가기][01]       |[더 많은 백준 문제 풀이 보기][00]      |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+[00]: https://atomic0x90.github.io/posts/#BOJ "Beakjoon post"
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+[10]: https://atomic0x90.github.io/c++/2020/02/10/c++-decimal-place.html "C++ 소수점 개수 조절"
+
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
