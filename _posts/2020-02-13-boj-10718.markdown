@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "백준 10178"
+date:   2020-02-13 10:01:00
+author: atomic0x90 (Yujun Han)
+categories: BOJ
+tags:  BOJ
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+
+## BOJ - 10718 - We love kriii
+
+
+---
+
+**code**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        cout<<"강한친구 대한육군"<<endl;
+        cout<<"강한친구 대한육군"<<endl;
+
+        return 0;
+}
+```
+
+**감사합니다.**
+
+---
+
+[홈으로 가기][01]       |[더 많은 백준 문제 풀이 보기][00]      |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+[00]: https://atomic0x90.github.io/posts/#BOJ "Beakjoon post"
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
+
