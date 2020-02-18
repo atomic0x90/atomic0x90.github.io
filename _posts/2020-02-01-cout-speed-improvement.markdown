@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C++ 출력(cout) 속도 향상하는 방법"
-date:   2020-02-12 10:01:00
+date:   2020-02-01 10:01:00
 author: atomic0x90 (Yujun Han)
 categories: C++
 tags:   C++
