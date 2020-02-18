@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "백준 1330"
+date:   2020-02-15 10:01:00
+author: atomic0x90 (Yujun Han)
+categories: BOJ
+tags:  BOJ
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## BOJ - 1330 - 두 수 비교하기
+
+---
+
+**설명**
+
+조건문을 사용하는 방법을 알아야 한다.
+
+---
+
+**code**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        double a,b;
+
+        cin>>a>>b;
+
+        if(a > b)
+                cout<<">"<<endl;
+        else if(a == b)
+                cout<<"=="<<endl;
+        else if(a < b)
+                cout<<"<"<<endl;
+
+        return 0;
+}
+```
+
+
+
+**감사합니다.**
+
+---
+
+[홈으로 가기][01]       |[더 많은 백준 문제 풀이 보기][00]      |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+[00]: https://atomic0x90.github.io/posts/#BOJ "Beakjoon post"
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}

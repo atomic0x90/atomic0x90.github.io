@@ -1,0 +1,103 @@
+---
+layout: post
+title:  "백준 10817"
+date:   2020-02-15 10:08:00
+author: atomic0x90 (Yujun Han)
+categories: BOJ
+tags:  BOJ
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## BOJ - 10817 - 세 수
+
+---
+
+**설명**
+
+
+정수 3개(a, b, c)가 주어진다. 두 번째로 큰 수를 알아내야 한다.
+
+우선 3가지의 수 중에서 두 가지의 수가 같으면 나머지 하나의 수가 어떤 수라도 서로 같은 두 수가 두 번째로 큰 수가 된다.
+
+예를 들어 10, 10, 9 가 있으면 두 번째로 큰 수는 10이다. 다른 예로는 10, 10, 11 이 있으면 두 번째로 큰 수는 10이다.
+또 다른 예로 10, 10, 10 이 있으면 두 번째로 큰 수는 10이다.
+
+그리고 a, b, c 가 모두 다를 경우에는 순서대로 (a \< b) && (a \< c) 비교, (b \< a) && (b \< c) 비교, (c \< a) && (c \< b) 비교한다.
+비교한 값이 참일 경우 나머지 두 수를 비교하여 두 번째로 큰 수를 알아낸다.
+
+
+[논리 연산자를 사용하는 법 알아보기][10]
+
+
+---
+
+**code**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        int a,b,c;
+
+        cin>>a>>b>>c;
+
+        if(a == b)
+                cout<<a<<endl;
+        else if(a == c)
+                cout<<a<<endl;
+        else if(b == c)
+                cout<<b<<endl;
+        else if(a < b && a < c)
+        {
+                if(b < c)
+                        cout<<b<<endl;
+                else
+                        cout<<c<<endl;
+        }
+        else if(b < a && b < c)
+        {
+                if(a < c)
+                        cout<<a<<endl;
+                else
+                        cout<<c<<endl;
+        }
+        else if(c < a && c < b)
+        {
+                if(a < b)
+                        cout<<a<<endl;
+                else
+                        cout<<b<<endl;
+        }
+
+        return 0;
+}
+```
+
+
+
+
+
+**감사합니다.**
+
+---
+
+[홈으로 가기][01]       |[더 많은 백준 문제 풀이 보기][00]      |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+[00]: https://atomic0x90.github.io/posts/#BOJ "Beakjoon post"
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+[10]: https://atomic0x90.github.io/c-language/2019/06/15/logical-operator.html "논리 연산자"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
+
+
