@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "C++ vector 사용 방법"
+date:   2020-02-16 10:01:00
+author: atomic0x90 (Yujun Han)
+categories: C++
+tags:   C++
+sitemap:
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## STL vector
+
+vector 를 사용하기 위해서는 vector 를 include 해야한다.
+
+**예시**
+```cpp
+#include <vector>
+```
+
+---
+
+## vector 생성자
+
+생성자				|설명
+:------				|:------:
+vector \<type\>	vec		|비어있는 vec 생성
+vector \<type\> vec(n)		|vec은 기본값으로 초기화된 n 개의 원소를 가진다.
+vector \<type\> vec(n,x)	|vec은 x 값으로 초기화된 n 개의 원소를 가진다.
+vector \<type\> vec1(vec2)	|vec1은 vec2를 복사한 것이다.
+
+
+---
+
+## vector 멤버 함수
+
+
+멤버 함수				|설명
+:------					|:------:
+vec.assign(n,x) 			|vec에 n 개의 원소를 x 값으로 할당한다.
+vec.at(n)				|vec의 n 번째 원소를 참조한다.
+vec.back()				|vec의 마지막 원소를 참조한다.
+iterator tmp = vec.begin()		|tmp는 vec의 첫 번째 원소를 가리키는 반복자다.
+tmp = vec.capacity()			|tmp는 vec의 할당된 원소의 크기이다.
+vec.clear()				|vec의 모든 원소를 제거한다.
+vec.empty()				|vec가 비어있는 상태인지 확인한다.
+iterator tmp = vec.end()		|tmp는 vec의 끝을 나타내는 반복자다.
+vec.erase(a,b)				|vec의 구간 [a,b)의 모든 원소를 제거한다.
+vec.front()				|vec의 첫 번째 원소를 참조한다.
+vec.insert(tmp,n,x)			|tmp가 가리키는 위치에 n 개의 원소를 x 값으로 삽입한다.
+vec.max_size()				|vec가 사용할 수 있는 최대 원소의 개수
+vec.pop_back()				|vec의 마지막 원소를 제거한다.
+vec.push_back(a)			|vec의 마지막에 a 를 추가한다.
+reverse_iterator tmp = vec.rbegin()	|tmp는 vec의 역 순차열의 첫 번째 원소를 가리키는 반복자다.
+reverse_iterator tmp = vec.rend()	|tmp는 vec의 역 순차열의 마지막 원소를 가리키는 반복자다.
+vec.resize(n,x)				|vec의 크기를 n 으로 변경한다. 확장된 공간의 값을 x 값으로 초기화한다.
+vec.resize(n)				|vec의 크기를 n 으로 변경한다. 확장된 공간의 값을 기본값으로 초기화한다.
+vec.size()				|vec의 원소 개수
+vec1.swap(vec2)				|vec1과 vec2를 바꾼다.
+
+---
+
+## vector 연산자
+
+연산자			|의미
+:------			|:------:
+vec1 == vec2		|vec1 과 vec2의 원소가 모두 같으면 참 하나라도 다르면 거짓
+vec1 != vec2		|vec1 과 vec2의 원소가 하나라도 다르면 참 모두 같으면 거짓
+vec1 < vec2		|vec1 이 vec2 보다 원소의 개수가 작으면 참 크면 거짓
+vec[i]			|vec의 i 번째 원소를 참조한다.
+
+
+
+**감사합니다.**
+
+---
+
+
+
+[홈으로 가기][01]       |&nbsp;                                 |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
