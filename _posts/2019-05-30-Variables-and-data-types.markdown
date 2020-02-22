@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "변수(variables)와 자료형(data types)"
+title:  "C / C++ 변수(variables)와 자료형(data types)"
 date:   2019-05-30 20:59:16
 author: atomic0x90 (Yujun Han)
-categories: C-Language
-tags:  C-Language
+categories: C-Language C++
+tags:  C-Language C++
 sitemap :
   changefreq : daily
   priority : 1.0
