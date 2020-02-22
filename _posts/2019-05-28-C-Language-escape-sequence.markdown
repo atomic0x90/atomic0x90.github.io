@@ -117,7 +117,7 @@ T	A	B
 
 [00]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
 [01]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
-[02]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
+[02]: https://atomic0x90.github.io/c-language/c++/2019/05/30/Variables-and-data-types.html "변수와 자료형"
 
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}

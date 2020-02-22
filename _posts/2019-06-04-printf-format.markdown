@@ -247,13 +247,13 @@ int main()
 
 
 
-[0]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
+[0]: https://atomic0x90.github.io/c-language/c++/2019/05/30/Variables-and-data-types.html "변수와 자료형"
 [1]: https://atomic0x90.github.io/ "home"
 [2]: https://atomic0x90.github.io/posts/ "posts"
 [3]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
 
 [00]: https://atomic0x90.github.io/c-language/2019/06/05/scanf-format.html "입력 함수"
-[01]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
+[01]: https://atomic0x90.github.io/c-language/c++/2019/05/30/Variables-and-data-types.html "변수와 자료형"
 [02]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "escape sequence"
 [03]: https://atomic0x90.github.io/c-language/2019/05/29/ASCII.html "ASCII code"
 [04]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"

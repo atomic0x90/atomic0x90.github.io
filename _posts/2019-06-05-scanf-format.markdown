@@ -176,7 +176,7 @@ scanf에 &를 사용하는 이유를 알기 위해서는 메모리의 주소에 
 
 [00]: https://atomic0x90.github.io/c-language/2019/06/04/printf-format.html "출력 함수와 형식 지정자"
 [01]: https://atomic0x90.github.io/c-language/2019/05/28/C-Language-escape-sequence.html "escape sequence"
-[02]: https://atomic0x90.github.io/c-language/2019/05/30/Variables-and-data-types.html "변수와 자료형"
+[02]: https://atomic0x90.github.io/c-language/c++/2019/05/30/Variables-and-data-types.html "변수와 자료형"
 [03]: https://atomic0x90.github.io/c-language/2019/06/13/arithmetic-operator.html "산술 연산자"
 
 
