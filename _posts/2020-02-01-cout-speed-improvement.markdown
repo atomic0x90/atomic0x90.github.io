@@ -92,13 +92,16 @@ int main()
 
 ---
 
-[홈으로 가기][01]       |&nbsp;                                 |[post 목록 보기][02]
+
+[홈으로 가기][01]       |[더 많은 C++ post 보기][03]            |[post 목록 보기][02]
 :------:                |:------:                               |:------:
                         |                                       |
 
 
 [01]: https://atomic0x90.github.io/ "home"
 [02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#C++ "C++ post"
+
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
