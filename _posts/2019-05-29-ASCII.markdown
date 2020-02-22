@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "아스키(ASCII) 코드"
+title:  "C / C++ 아스키(ASCII) 코드"
 date:   2019-05-29 23:25:41
 author: atomic0x90 (Yujun Han)
 categories: C-Language
