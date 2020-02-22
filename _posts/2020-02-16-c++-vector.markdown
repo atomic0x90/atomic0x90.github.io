@@ -55,6 +55,7 @@ vec.pop_back()				|vec의 마지막 원소를 제거한다.
 vec.push_back(a)			|vec의 마지막에 a 를 추가한다.
 reverse_iterator tmp = vec.rbegin()	|tmp는 vec의 역 순차열의 첫 번째 원소를 가리키는 반복자다.
 reverse_iterator tmp = vec.rend()	|tmp는 vec의 역 순차열의 마지막 원소를 가리키는 반복자다.
+vec.reserve(n)				|vec의 크기를 n 으로 예약한다.
 vec.resize(n,x)				|vec의 크기를 n 으로 변경한다. 확장된 공간의 값을 x 값으로 초기화한다.
 vec.resize(n)				|vec의 크기를 n 으로 변경한다. 확장된 공간의 값을 기본값으로 초기화한다.
 vec.size()				|vec의 원소 개수
