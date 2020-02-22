@@ -1,0 +1,197 @@
+---
+layout: post
+title:  "C++ for 사용법"
+date:   2020-02-19 10:01:00
+author: atomic0x90 (Yujun Han)
+categories: C++
+tags:  C++
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## for 문 이란?
+
+for 문은 반복 수행을 하게 만드는 함수이다.
+
+프로그램 개발자가 반복적으로 수행해야 하는 상황에 처했을 때 같은 문장을 계속 작성하는 일은 매우 비효율 적이다.
+
+그래서 for(반복) 을 사용하여 code를 효율적으로 작성한다.
+
+---
+
+## for header
+
+`iostream` 을 include 해야 한다.
+
+**예시**
+```cpp
+#include <iostream>
+```
+
+---
+
+## for 문 사용 방법
+
+for 의 형태는 다음과 같다.
+
+```cpp
+for(초기 조건;반복 수행 조건;증감 조건)
+{
+	//반복을 수행할 알고리즘
+}
+```
+
+**예시**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        //초기 조건 -> int형 변수 i의 값 : 0
+	//반복 수행 조건 -> i의 값이 10 미만이면 참(true)
+	//증감 조건 -> i 가 1씩 증가함
+	for(int i = 0 ; i < 10 ; i++)
+        {
+                cout<<"i : "<<i<<endl;
+		cout<<" test"<<endl;
+        }
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+i : 0
+test
+i : 1
+test
+i : 2
+test
+i : 3
+test
+i : 4
+test
+i : 5
+test
+i : 6
+test
+i : 7
+test
+i : 8
+test
+i : 9
+test
+```
+
+반복문(for)을 실행하면 반복 문의 중괄호 안에 있는 모든 것이 반복 문의 조건식에 맞춰서 반복한다.
+
+반복문에 중괄호를 안 하면 어떻게 될까? 다음 예제를 보자.
+
+**예시**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//초기 조건 -> int형 변수 i의 값 : 0
+        //반복 수행 조건 -> i의 값이 10 미만이면 참(true)
+        //증감 조건 -> i 가 1씩 증가함
+        for(int i = 0 ; i < 10 ; i++)
+                cout<<"i : "<<i<<endl;
+                cout<<" test"<<endl;
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+i : 0
+i : 1
+i : 2
+i : 3
+i : 4
+i : 5
+i : 6
+i : 7
+i : 8
+i : 9
+ test
+```
+
+실행 결과와 같이 반복문에 중괄호를 하지 않을 경우 반복문 바로 아래 한 줄만 반복하는 것을 알 수 있다.
+
+
+---
+
+## vector for 사용법
+
+vector를 일반 배열처럼 사용하면 된다.
+
+[vector 멤버 함수 보러 가기][10]
+
+**예제**
+```cpp
+#include <iostream>
+
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+        //int형 vector v 생성
+        vector <int> v;
+
+        //v 의 원소 개수(10) 예약, 현재 원소 개수 0 (v.size() == 0)
+        v.reserve(10);
+
+	//v 의 마지막에 i 를 추가하는 반복문
+        for(int i = 0;i < 10;i++)
+                v.push_back(i);
+
+	//현재 원소 개수 10 (v.size() == 10)
+	//v 의 원소를 출력하는 반복문
+        for(int i = 0;i < v.size();i++)
+                cout<<v[i]<<" ";
+
+        v.clear();
+	//현재 원소 개수 0 (v.size() == 0)
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+0 1 2 3 4 5 6 7 8 9 
+```
+
+**감사합니다.**
+
+---
+
+
+
+[홈으로 가기][01]       |[더 많은 C++ post 보기][03]            |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#C++ "C++ post"
+
+[10]: https://atomic0x90.github.io/c++/2020/02/16/c++-vector.html "C++ vector"
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
