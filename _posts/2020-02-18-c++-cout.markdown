@@ -1,0 +1,91 @@
+---
+layout: post
+title:  "C++ cout 사용법"
+date:   2020-02-18 10:02:00
+author: atomic0x90 (Yujun Han)
+categories: C++
+tags:  C++
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## cout 이란?
+
+프로그램 사용자 화면에 무언가를 출력하기 위한 함수이다.
+
+출력 함수는 프로그램을 사용하는 사람이 무엇을 해야 하는지 알려주는 역할이다.
+
+---
+
+## cout header
+
+cout 을 사용하려면 `iostream` 을 include 한다
+
+**예시**
+```cpp
+#include <iostream>
+```
+
+---
+
+## cout 사용 방법
+
+변수의 값을 출력하고 싶으면 \<\< (변수) \<\< 의 형태로 작성한다.
+
+문자를 출력하고 싶으면 \<\< "(문자열)" \<\< 의 형태로 작성한다.
+
+또한 줄바꿈을 사용하고 싶으면 `endl`를 사용하거나 [이스케이프 시퀀스(`\n`)][10]를 사용한다.
+
+
+**예시**
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        int a = 100;
+
+        char b = 'A';
+
+        long long c = 10000;
+
+        cout<<a<<endl;
+
+        cout<<b<<" "<<"Hello\n";
+
+        cout<<"long long c value : "<<c<<endl;
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+100
+A Hello
+long long c value : 10000
+```
+
+**감사합니다.**
+
+---
+
+
+
+[홈으로 가기][01]       |[더 많은 C++ post 보기][03]            |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#C++ "C++ post"
+
+[10]: https://atomic0x90.github.io/c++/2020/02/17/c++-escape-sequence.html "C++ 이스케이프 시퀀스"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
