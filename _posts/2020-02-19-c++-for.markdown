@@ -67,25 +67,25 @@ int main()
 **실행 결과**
 ```bash
 i : 0
-test
+ test
 i : 1
-test
+ test
 i : 2
-test
+ test
 i : 3
-test
+ test
 i : 4
-test
+ test
 i : 5
-test
+ test
 i : 6
-test
+ test
 i : 7
-test
+ test
 i : 8
-test
+ test
 i : 9
-test
+ test
 ```
 
 반복문(for)을 실행하면 반복 문의 중괄호 안에 있는 모든 것이 반복 문의 조건식에 맞춰서 반복한다.
