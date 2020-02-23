@@ -74,7 +74,16 @@ vec[i]			|vec의 i 번째 원소를 참조한다.
 
 
 
-**감사합니다.**
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+
+**갑사합니다**
+
+---
+
+### Related Posts
+
+[vector for 사용법][10]
+
 
 ---
 
@@ -89,7 +98,7 @@ vec[i]			|vec의 i 번째 원소를 참조한다.
 [03]: https://atomic0x90.github.io/posts/#C++ "C++ post"
 
 
-
+[10]: https://atomic0x90.github.io/c++/2020/02/19/c++-for.html "vector for문"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
