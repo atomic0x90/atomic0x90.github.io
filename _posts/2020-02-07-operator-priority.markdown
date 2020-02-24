@@ -1,6 +1,6 @@
 ---
 layout: post
-title:	"C언어 연산자의 우선순위"
+title:	"C / C++ 연산자의 우선순위"
 date:	2020-02-07 12:12:16
 author:	atomic0x90 (Yujun Han)
 categories: C-Language
