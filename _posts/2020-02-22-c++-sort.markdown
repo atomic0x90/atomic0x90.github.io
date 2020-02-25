@@ -1,0 +1,338 @@
+---
+layout: post
+title:  "C++ sort 사용법(compare, greater)"
+date:   2020-02-22 10:01:00
+author: atomic0x90 (Yujun Han)
+categories: C++
+tags:  C++
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## sort 란?
+
+어떤 정보를 다룰 때 정보가 정렬이 안 되어있으면 정보를 분석하기 굉장히 어렵다.
+
+그래서 우리는 어떤 정보가 들어오면 그것을 정렬해서 분석하기 쉽게 만들어야 한다.
+
+따라서 sort()를 이용해서 정렬을 한다.
+
+---
+
+## sort header
+
+C++ sort() 함수를 사용하기 위해서는 `algorithm` 을 include 해야 한다.
+
+**예시**
+```cpp
+#include <algorithm>
+```
+
+---
+
+## C++ sort 기본 형태
+
+sort 함수의 기본 형태는 다음과 같다.
+
+1. sort(start,end)를 이용하면 \[start,end) 범위의 인자를 오름차순(기본값,default)으로 정렬해 준다.
+
+1. sort(start,end,compare)를 이용하면 사용자가 정한 함수(compare)를 기준으로 정렬을 하게 된다.
+
+1. sort(start,end,grearter\<자료형\>())를 이용하면 \[start,end) 범위의 인자를 내림차순으로 정렬해 준다.
+
+
+---
+
+## sort 기본 형태 예제 (1번 형태)
+
+1번 형태 : sort(start,end)를 이용하면 \[start,end) 범위의 인자를 오름차순(기본값,default)으로 정렬해 준다.
+
+**예시**
+```cpp
+#include <iostream>
+
+#include <algorithm>
+
+using namespace std;
+
+//배열 초기화
+int iv[10] = {1,3,4,2,6,7,2,10,12,5};
+double dv[10] = {10.1,1.0,0.9,5.5,4.99,10.0,10.001,3.2,10,1.9};
+char cv[10] = {'b','a','c','j','i','d','h','e','c','z'};
+
+int main()
+{
+        cout<<"int형 배열 정렬하기 전 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<iv[i]<<" ";
+        cout<<endl;
+
+        sort(iv,iv+10);		//sort(iv 배열의 시작점,iv 배열의 시작점 + 10)
+
+        cout<<"int형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<iv[i]<<" ";
+        cout<<endl<<endl;
+
+	
+	cout<<"double형 배열 정렬하기 전 상태:\t";
+        for(int i = 0;i < 10;i++)
+                cout<<dv[i]<<" ";
+        cout<<endl;
+
+        sort(dv,dv+10);		//sort(dv 배열의 시작점,dv 배열의 시작점 + 10)
+
+	cout<<"double형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<dv[i]<<" ";
+        cout<<endl<<<endl;
+
+        
+	cout<<"char형 배열 정렬하기 전 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<cv[i]<<" ";
+        cout<<endl;
+
+        sort(cv,cv+10);		//sort(cv 배열의 시작점,cv 배열의 시작점 + 10)
+
+        cout<<"char형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<cv[i]<<" ";
+        cout<<endl;
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+int형 배열 정렬하기 전 상태 :	1 3 4 2 6 7 2 10 12 5 
+int형 배열 정렬 후 상태 :	1 2 2 3 4 5 6 7 10 12
+ 
+double형 배열 정렬하기 전 상태:	10.1 1 0.9 5.5 4.99 10 10.001 3.2 10 1.9 
+double형 배열 정렬 후 상태 :	0.9 1 1.9 3.2 4.99 5.5 10 10 10.001 10.1 
+
+char형 배열 정렬하기 전 상태 :	b a c j i d h e c z 
+char형 배열 정렬 후 상태 :	a b c c d e h i j z 
+```
+
+실행 결과에서 알 수 있듯이 int, double 형태는 숫자의 오름차순으로 정렬되고 char 형태는 알파벳 순서의 오름차순으로 정렬된다.
+
+---
+
+## sort 기본 형태 예제 (2번 형태)
+
+C++ sort compare를 사용한 예제이다.
+
+2번 형태 : sort(start,end,compare)를 이용하면 사용자가 정한 함수(compare)를 기준으로 정렬을 하게 된다.
+
+compare 함수에서 const(상수)를 사용하는 이유는 
+compare 함수를 이용하면서 값을 바꾸지 않고 값을 참조만 하겠다는 것을 명시적으로 나타내기 위함이다.
+
+**예시**
+```cpp
+#include <iostream>
+
+#include <algorithm>
+
+using namespace std;
+
+//int 정렬 값을 내림차순으로 만드는 함수(사용자가 만든 compare 함수)
+bool icompare(const int &a, const int &b)
+{
+        if(a > b)
+                return true;
+        else
+                return false;
+}
+
+//double 정렬 값을 내림차순으로 만드는 함수(사용자가 만든 compare 함수)
+bool dcompare(const double &a, const double &b)
+{
+        if(a > b)
+                return true;
+        else
+                return false;
+}
+
+//char 정렬 값을 내림차순으로 만드는 함수(사용자가 만든 compare 함수)
+bool ccompare(const char &a, const char &b)
+{
+        if(a > b)
+                return true;
+        else
+                return false;
+}
+
+//배열 초기화
+int iv[10] = {1,3,4,2,6,7,2,10,12,5};
+double dv[10] = {10.1,1.0,0.9,5.5,4.99,10.0,10.001,3.2,10,1.9};
+char cv[10] = {'b','a','c','j','i','d','h','e','c','z'};
+
+int main()
+{
+        cout<<"int형 배열 정렬하기 전 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<iv[i]<<" ";
+        cout<<endl;
+
+	//sort(iv 배열의 시작점,iv 배열의 시작점 + 10,사용자 지정 함수(icompare))
+        sort(iv,iv+10,icompare);
+
+        cout<<"int형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<iv[i]<<" ";
+        cout<<endl<<endl;
+
+
+        cout<<"double형 배열 정렬하기 전 상태:\t";
+        for(int i = 0;i < 10;i++)
+                cout<<dv[i]<<" ";
+        cout<<endl;
+
+	//sort(dv 배열의 시작점,dv 배열의 시작점 + 10,사용자 지정 함수(dcompare))
+        sort(dv,dv+10,dcompare);
+
+        cout<<"double형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<dv[i]<<" ";
+        cout<<endl<<endl;
+
+
+        cout<<"char형 배열 정렬하기 전 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<cv[i]<<" ";
+        cout<<endl;
+
+	//sort(cv 배열의 시작점,cv 배열의 시작점 + 10,사용자 지정 함수(ccompare))
+        sort(cv,cv+10,ccompare);
+
+        cout<<"char형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<cv[i]<<" ";
+        cout<<endl;
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+int형 배열 정렬하기 전 상태 :	1 3 4 2 6 7 2 10 12 5 
+int형 배열 정렬 후 상태 :	12 10 7 6 5 4 3 2 2 1 
+
+double형 배열 정렬하기 전 상태:	10.1 1 0.9 5.5 4.99 10 10.001 3.2 10 1.9 
+double형 배열 정렬 후 상태 :	10.1 10.001 10 10 5.5 4.99 3.2 1.9 1 0.9 
+
+char형 배열 정렬하기 전 상태 :	b a c j i d h e c z 
+char형 배열 정렬 후 상태 :	z j i h e d c c b a 
+```
+
+실행 결과에서 알 수 있듯이 사용자가 임의로 만든 compare 함수가 내림차순 함수이기 때문에 내림차순 기준에 맞춰서
+ int, double 형태는 숫자의 내림차순으로 정렬되고 char 형태는 알파벳 순서의 내림차순으로 정렬된다.
+
+
+---
+
+## sort 기본 형태 예제 (3번 형태)
+
+C++ sort greater를 사용한 예제이다.
+
+3번 형태 : sort(start,end,grearter\<자료형\>())를 이용하면 \[start,end) 범위의 인자를 내림차순으로 정렬해 준다.
+
+**예시**
+```cpp
+#include <iostream>
+
+#include <algorithm>
+
+using namespace std;
+
+//배열 초기화
+int iv[10] = {1,3,4,2,6,7,2,10,12,5};
+double dv[10] = {10.1,1.0,0.9,5.5,4.99,10.0,10.001,3.2,10,1.9};
+char cv[10] = {'b','a','c','j','i','d','h','e','c','z'};
+
+int main()
+{
+        cout<<"int형 배열 정렬하기 전 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<iv[i]<<" ";
+        cout<<endl;
+
+        //sort(iv 배열의 시작점,iv 배열의 시작점 + 10,greater 사용(내림차순 정렬))
+        sort(iv,iv+10,greater<int>());
+
+        cout<<"int형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<iv[i]<<" ";
+        cout<<endl<<endl;
+
+
+        cout<<"double형 배열 정렬하기 전 상태:\t";
+        for(int i = 0;i < 10;i++)
+                cout<<dv[i]<<" ";
+        cout<<endl;
+
+        //sort(dv 배열의 시작점,dv 배열의 시작점 + 10,greater 사용(내림차순 정렬)
+        sort(dv,dv+10,greater<double>());
+
+        cout<<"double형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<dv[i]<<" ";
+        cout<<endl<<endl;
+
+
+        cout<<"char형 배열 정렬하기 전 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<cv[i]<<" ";
+        cout<<endl;
+
+        //sort(cv 배열의 시작점,cv 배열의 시작점 + 10,greater 사용 (내림차순 정렬))
+        sort(cv,cv+10,greater<char>());
+
+        cout<<"char형 배열 정렬 후 상태 :\t";
+        for(int i = 0;i < 10;i++)
+                cout<<cv[i]<<" ";
+        cout<<endl;
+
+        return 0;
+}
+```
+
+**실행 결과**
+```bash
+int형 배열 정렬하기 전 상태 :	1 3 4 2 6 7 2 10 12 5 
+int형 배열 정렬 후 상태 :	12 10 7 6 5 4 3 2 2 1 
+
+double형 배열 정렬하기 전 상태:	10.1 1 0.9 5.5 4.99 10 10.001 3.2 10 1.9 
+double형 배열 정렬 후 상태 :	10.1 10.001 10 10 5.5 4.99 3.2 1.9 1 0.9 
+
+char형 배열 정렬하기 전 상태 :	b a c j i d h e c z 
+char형 배열 정렬 후 상태 :	z j i h e d c c b a 
+```
+
+실행 결과에서 알 수 있듯이 grearter를 사용하면 내림차순으로 정렬된다.
+ 따라서 int, double 형태는 숫자의 내림차순으로 정렬되고 char 형태는 알파벳 순서의 내림차순으로 정렬된다.
+
+
+**감사합니다.**
+
+
+---
+
+
+[홈으로 가기][01]       |[더 많은 C++ post 보기][03]            |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#C++ "C++ post"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
+
