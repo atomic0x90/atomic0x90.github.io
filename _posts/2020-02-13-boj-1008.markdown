@@ -20,6 +20,16 @@ cover:  "/assets/instacode.png"
 
 소수점 개수 출력 범위를 조절할 줄 알아야 한다.
 
+cout을 사용하여 실수를 출력하면 전체 자리수(정수 부분 + 소수점 부분)가 6자리로 고정되어 출력된다.
+
+전체 자리수를 수정하는 방법은 다음과 같다.
+
+```cpp
+cout<<fixed;
+cout.precision(number);
+```
+cout.precision(number); 여기서 number 자리에 출력하고 싶은 소수점의 자리수를 작성하면 된다.
+
 [C++ 소수점 개수 출력하는 법 알아보기][10]
 
 
