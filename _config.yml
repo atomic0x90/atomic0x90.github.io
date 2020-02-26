@@ -17,12 +17,12 @@ url: "https://atomic0x90.github.io"
 disqus-shortname: atomic0x90
 
 # Site settings
-title: C / C++ / Markdown Programming, BOJ Algorithm, Ubuntu
+title: C / C++ / Markdown Programming, BOJ, Algorithm, Ubuntu
 subtitle: "열심히 놀기 위해 열심히 공부하는 개발자"
 email: hanyujun.study@gmail.com
 name: Yujun Han
 description: >
-  C / C++ / Data-Struct / Algorithm / Linux(Ubuntu) / markdown / BOJ
+  c와 c++ 를 사용하는 방법 설명 / 백준 온라인 저지 문제 풀이를 설명 / 나만의 프로그래밍 개발 일지 / 개발하면서 알게되는 것들을 저장하는 공간
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
