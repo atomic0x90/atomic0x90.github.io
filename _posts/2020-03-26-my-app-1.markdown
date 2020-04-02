@@ -1,0 +1,139 @@
+---
+layout: post
+title:  "자작 앱 홍보(수학 게임-계산 능력 향상(두뇌 트레이닝))"
+date:   2020-03-26 10:00:00
+author: atomic0x90 (Yujun Han)
+categories: MyApp
+tags:  MyApp
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## 앱을 만들게 된 계기
+
+
+나는 앱을 만들어 본 경험이 없었기 때문에 항상 말로만 앱을 만들어야지 했었다.
+
+앱을 만들겠다는 생각만 가진 것은 새로운 것을 배우겠다는 용기가 없었던 것 같다.
+
+우연히 유튜브 영상을 보던 중에 컴퓨터 공학을 전공하지 않은 사람이 앱을 만들고 출시하는 과정이 담긴 영상들을 보게 됐다.
+
+이런 관련 영상이 나에게 굉장한 용기를 주었다.
+
+프로그래밍 지식이 하나도 없는 사람이 앱이라는 것을 개발하는 것을 보고 굉장히 대단함을 느꼈다.
+
+그래서 나도 생각만 하는 사람이 되지 말고 생각을 행동으로 옮기는 실행력이 뛰어난 사람이 되어야겠다고 다짐했다.
+
+그래서 나는 새로운 것을 배웠고 그 결과로 작지만 하나의 앱을 만들게 되었다.
+
+
+---
+
+## 첫 번째 자작 앱 홍보
+
+앱 이름 : 수학 게임-계산 능력 향상(두뇌 트레이닝)
+
+출시 플랫폼 : Android
+
+앱 링크 : <https://play.google.com/store/apps/details?id=atomic0x90.github.io.mathgame>
+
+구글 플레이 등록 화면
+
+<a href="https://play.google.com/store/apps/details?id=atomic0x90.github.io.mathgame" target="_blank">
+<img src="{{site.baseurl}}/assets/MainSS.png" width="200" height="600" alt="main ss" title="main ss">
+</a>
+
+---
+
+## 앱의 콘텐츠
+
+1. 기본적인 사칙 연산
+1. 1분 동안 어느 한 숫자를 반복적으로 더하거나 빼기
+1. 수식이 주어지면 최댓값 최솟값 찾기
+
+---
+
+## 사칙 연산
+
+말 그대로 더하기, 빼기, 곱하기, 나누기 연산을 연습하는 콘텐츠이다.
+
+사진은 각각 더하기, 빼기, 곱하기, 나누기이다.
+
+<div style="width:80%;margin:0 auto;">
+	<img style="width:48%" src="{{site.baseurl}}/assets/Plus.jpg" alt="Plus" title="Plus">
+	<img style="width:48%" src="{{site.baseurl}}/assets/Minus.jpg" alt="Minus" title="Minus">
+	<img style="width:48%" src="{{site.baseurl}}/assets/Multiple.jpg" alt="Multiplication" title="Multiplication">
+	<img style="width:48%" src="{{site.baseurl}}/assets/Divide.jpg" alt="Divide" title="Divide">
+</div>
+
+
+---
+
+## 무한 더하기, 무한 빼기
+
+주어진 1분 동안 다음과 같은 계산을 하면 된다.
+
+만약 `+6` 콘텐츠를 선택했다면
+
+1. a + 6 = b
+1. b + 6 = c
+1. c + 6 = d
+1. ...
+
+이와 같이 하나의 숫자에 반복적으로 같은 숫자를 더하면 된다(순차적 덧셈).
+
+만약 `-7` 콘텐츠를 선택했다면
+
+1. a - 7 = b
+1. b - 7 = c
+1. c - 7 = d
+1. ...
+
+이와 같이 하나의 숫자에 반복적으로 같은 숫자를 빼면 된다(순차적 뺄셈).
+
+
+사진은 각각 +6 더하기, -6 빼기이다.
+
+<div style="width:80%;margin:0 auto;">
+        <img style="width:48%" src="{{site.baseurl}}/assets/InfiPlus.jpg" alt="InfiPlus" title="InfiPlus">
+        <img style="width:48%" src="{{site.baseurl}}/assets/InfiMinus.jpg" alt="InfiMinus" title="InfiMinus">
+</div>
+
+---
+
+## 최댓값 최솟값 찾기
+
+4개의 수식이 주어지면 주어진 수식 중에서 최댓값이나 최솟값을 찾으면 되는 콘텐츠이다.
+
+사진은 각각 최댓값 찾기, 최솟값 찾기이다.
+
+<div style="width:80%;margin:0 auto;">
+        <img style="width:48%" src="{{site.baseurl}}/assets/Max.jpg" alt="Max" title="Max">
+        <img style="width:48%" src="{{site.baseurl}}/assets/Min.jpg" alt="Min" title="Min">
+</div>
+
+---
+
+앱 링크 : <https://play.google.com/store/apps/details?id=atomic0x90.github.io.mathgame>
+
+---
+
+**감사합니다.**
+
+
+---
+
+
+[홈으로 가기][01]       |        |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
