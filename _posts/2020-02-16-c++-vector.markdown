@@ -76,7 +76,7 @@ vec[i]			|vec의 i 번째 원소를 참조한다.
 
 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
 
-**갑사합니다**
+**감사합니다**
 
 ---
 
