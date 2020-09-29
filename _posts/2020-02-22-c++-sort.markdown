@@ -45,9 +45,9 @@ sort 함수의 기본 형태는 다음과 같다.
 
 ---
 
-## sort 기본 형태 예제 (1번 형태)
+## sort 기본 형태 예제 (오름차순 정렬)
 
-1번 형태 : sort(start,end)를 이용하면 \[start,end) 범위의 인자를 오름차순(기본값,default)으로 정렬해 준다.
+오름차순 정렬 : sort(start,end)를 이용하면 \[start,end) 범위의 인자를 오름차순(기본값,default)으로 정렬해 준다.
 
 **예시**
 ```cpp
@@ -122,11 +122,11 @@ char형 배열 정렬 후 상태 :	a b c c d e h i j z
 
 ---
 
-## sort 기본 형태 예제 (2번 형태)
+## sort 기본 형태 예제 (사용자 정의 정렬)
 
 C++ sort compare를 사용한 예제이다.
 
-2번 형태 : sort(start,end,compare)를 이용하면 사용자가 정한 함수(compare)를 기준으로 정렬을 하게 된다.
+사용자 정의 정렬 : sort(start,end,compare)를 이용하면 사용자가 정한 함수(compare)를 기준으로 정렬을 하게 된다.
 
 compare 함수에서 const(상수)를 사용하는 이유는 
 compare 함수를 이용하면서 값을 바꾸지 않고 값을 참조만 하겠다는 것을 명시적으로 나타내기 위함이다.
@@ -236,11 +236,11 @@ char형 배열 정렬 후 상태 :	z j i h e d c c b a
 
 ---
 
-## sort 기본 형태 예제 (3번 형태)
+## sort 기본 형태 예제 (내림차순 정렬)
 
 C++ sort greater를 사용한 예제이다.
 
-3번 형태 : sort(start,end,grearter\<자료형\>())를 이용하면 \[start,end) 범위의 인자를 내림차순으로 정렬해 준다.
+내림차순 정렬 : sort(start,end,grearter\<자료형\>())를 이용하면 \[start,end) 범위의 인자를 내림차순으로 정렬해 준다.
 
 **예시**
 ```cpp
