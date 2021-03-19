@@ -23,7 +23,7 @@ email: hanyujun.study@gmail.com
 name: Yujun Han
 description: >
   c와 c++ 를 사용하는 방법 설명 / 백준 온라인 저지 문제 풀이를 설명 / 나만의 프로그래밍 개발 일지 / 개발하면서 알게되는 것들을 저장하는 공간
-keywords: C programming,C++programming,Markdown grammar,Beakjoon online judge,Ubuntu,algorithm,android studio
+keywords: C programming,C++programming,Markdown grammar,Beakjoon online judge,Ubuntu,algorithm,android studio,android
 
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
@@ -122,12 +122,12 @@ social:
 #    desc: Subscribe on YouTube
 #    share: false
 
-#  - name: Instagram
-#    icon: instagram
-#    username:
-#    url:
-#    desc: Follow me on Instagram
-#    share: false
+  - name: Instagram
+    icon: instagram
+    username: yu_jun.h
+    url: https://www.instagram.com/yu_jun.h/
+    desc: Follow me on Instagram
+    share: true
 
 #  - name: Pinterest
 #    icon: pinterest
