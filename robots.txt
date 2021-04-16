@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://atomic0x90.github.io/sitemap.xml
+
+#DaumWebMasterTool:986ea3f05d140059f98648255644b94f7b12335e3c4080d8a11888c13a247755:k8YIG5OBm8qTU9JN05u7aQ==
