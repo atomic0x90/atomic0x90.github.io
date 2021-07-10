@@ -1,0 +1,194 @@
+---
+layout: post
+title:  "[프로그래머스] 표 편집(C++)"
+date:   2021-07-10 10:00:00
+author: atomic0x90 (Yujun Han)
+categories: Programmers
+tags:  Programmers
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## [프로그래머스] 표 편집 풀이 (2021 카카오 채용연계형 인턴십)
+
+<https://programmers.co.kr/learn/courses/30/lessons/81303>
+
+(효율성 통과 O)
+
+이 문제는 정확성을 요구하는 알고리즘은 쉬웠다. 하지만 효율성 검사에서 많은 시간이 걸렸다. 처음에 생각한 아이디어는 배열을 생성해서 일일이 순차 검색을 통해서 이동하고 삭제, 복구하는 거였다. 그래서 순차 검색을 하지 않기 위해서 생각한 게 두 번째 아이디어다.
+
+불필요한 위치 이동을 하지 않고, 순차 검색을 하지 않아야 효율성 검사를 통과할 수 있는 문제다.
+
+~~문제를 봤을 땐 2명이 풀었었는데, 더 빨리 못 풀어서 아쉽다~~
+
+---
+
+## 문제 풀이
+
+1. **vector\<pair\<int,pair\<int,int\> \> \> v**를 n 개만큼 만든다. //존재 여부,(앞, 뒤)
+  - v.first : 1이면 현재 위치 값 존재, 0이면 삭제된 상태
+  - v.second.first : 현재 위치 값 바로 앞에 존재하고 있는 위치 값
+  - v.second.second : 현재 위치 값 바로 뒤에 존재하고 있는 위치 값
+2. **U** 또는 **D**가 계속 반복해서 나올 경우 **sum**에 이동량을 계산한다.
+3. **C** 또는 **Z**가 나올 경우 앞서서 계산한 이동량(**sum**)을 **now**에 적용한다.
+4. **C**일 경우 stack에 현재 위치를 저장하고 현재 위치 앞, 뒤 벡터 값을 서로 연결하고 현재 위치 값을 삭제한다.
+5. **Z**일 경우 stack의 top 값을 가지고 현재 위치를 지나가는 벡터 값을 찾아서 앞, 뒤로 연결한다.
+
+- **v**의 현재 위치 존재 여부에 따라 O, X가 결정된다.
+
+---
+
+## 정답 코드
+
+```c
+#include <string>
+#include <vector>
+#include <stack>
+#include <utility>
+#include <algorithm>
+using namespace std;
+
+bool Find(pair<int,pair<int,int> > a){
+    return a.first;
+}
+
+string solution(int n, int k, vector<string> cmd) {
+    string answer = "";
+    int now = k;
+    int low = 0,high = n-1;
+    stack<int> del;
+    vector<pair<int,pair<int,int> > > v(n);
+    for(int i = 0;i < n;i++){
+        answer += 'O';
+        if(i == 0){
+            v[i].first = 1;
+            v[i].second.first = -1;
+            v[i].second.second = i+1;
+        }
+        else if(i == n-1){
+            v[i].first = 1;
+            v[i].second.first = i-1;
+            v[i].second.second = -1;
+        }
+        else{
+            v[i].first = 1;
+            v[i].second.first = i-1;
+            v[i].second.second = i+1;
+        }
+    }
+    
+    for(int i = 0;i < cmd.size();i++){
+        int sum = 0;
+        while(cmd[i][0] == 'U' || cmd[i][0] == 'D'){
+            if(cmd[i][0] == 'U'){
+                cmd[i][0] = ' ';
+                int num = stoi(cmd[i]);
+                sum -= num;
+            }
+            else if(cmd[i][0] == 'D'){
+                cmd[i][0] = ' ';
+                int num = stoi(cmd[i]);
+                sum += num;
+            }
+            
+            if(i < cmd.size()-1) i++;
+            else break;
+        }
+        
+        if(sum < 0){
+            sum *= -1;
+            while(sum){
+                now = v[now].second.first;
+                sum--;
+            }
+        }
+        else if(sum > 0){
+            while(sum){
+                now = v[now].second.second;
+                sum--;
+            }
+        }
+        
+        if(cmd[i][0] == 'C'){
+            del.push(now);
+            answer[now] = 'X';
+            if(v[now].second.second == -1){
+                int tmp = v[now].second.first;
+                v[now].first = 0;
+                v[tmp].second.second = -1;
+                now = tmp;
+                high = tmp;
+            }
+            else if(v[now].second.first == -1){
+                int tmp = v[now].second.second;
+                v[now].first = 0;
+                v[tmp].second.first = -1;
+                now = tmp;
+                low = tmp;
+            }
+            else{
+                int pre = v[now].second.first;
+                int post = v[now].second.second;
+                v[now].first = 0;
+                v[pre].second.second = post;
+                v[post].second.first = pre;
+    
+                now = post;
+            }
+        }
+        else if(cmd[i][0] == 'Z'){
+            int check = del.top();
+            answer[check] = 'O';
+            del.pop();
+            if(check < low){
+                v[low].second.first = check;
+                v[check].first = 1;
+                v[check].second.first = -1;
+                v[check].second.second = low;
+                
+                low = check;
+                continue;
+            }
+            else if(check > high){
+                v[high].second.second = check;
+                v[check].first = 1;
+                v[check].second.first = high;
+                v[check].second.second = -1;
+                
+                high = check;
+                continue;
+            }
+            auto it = find_if(v.begin()+check+1,v.end(),Find);
+
+            int sf = it->second.first;
+            it->second.first = check;
+            v[check].first = 1;
+            v[check].second.first = sf;
+            v[check].second.second = it-v.begin();
+            v[sf].second.second = check;
+        }
+    }
+    
+    return answer;
+}
+```
+
+**감사합니다.**
+
+
+---
+
+
+[홈으로 가기][01]       |[더 많은 programmers post 보기][03]        |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#programmers "programmers posts"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
