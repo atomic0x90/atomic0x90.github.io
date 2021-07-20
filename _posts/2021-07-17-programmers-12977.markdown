@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "[프로그래머스] 소수 만들기(C++)"
+date:   2021-07-17 10:00:00
+author: atomic0x90 (Yujun Han)
+categories: Programmers
+tags:  Programmers
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## [프로그래머스] 소수 만들기 풀이 (Summer/Winter Coding(~2018))
+
+---
+
+<https://programmers.co.kr/learn/courses/30/lessons/12977>
+
+---
+
+이 문제는 주어진 숫자를 중복되지 않게 3개를 선택하는 알고리즘을 생각하면 된다.  
+그리고 나머지 연산을 통해서 소수를 판별하면 된다.
+
+---
+
+## 문제 풀이
+
+1. 숫자 3개를 더한 값을 저장하기 위한 벡터(**check**)를 선언한다.
+1. 숫자 3개를 중복되지 않게 선택한 뒤 값을 저장한다.
+  - 3중 for 문을 이용해  **중복되지 않게** 값을 저장한다.
+1. 저장한 값을 나머지 연산을 통해 소수인지 판별한다. 
+
+---
+
+## 정답 코드
+
+```cpp
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int solution(vector<int> nums) {
+    int answer = -1;
+    
+    vector <int> check;
+    int nums_len = nums.size();
+    int flag;
+    int result = 0;
+    for(int i = 0;i < nums_len-2;i++){
+        for(int j = i+1;j < nums_len-1;j++){
+            for(int k = j+1;k < nums_len;k++){
+                check.push_back(nums[i]+nums[j]+nums[k]);
+            }
+        }
+    }
+    
+    for(int i = 0;i < check.size();i++){
+        flag = 0;
+        for(int j = 2;j < check[i]/2;j++){
+            if(check[i]%j == 0){
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0)
+            result++;
+    }
+    answer = result;
+    return answer;
+}
+```
+
+**감사합니다.**
+
+
+---
+
+
+[홈으로 가기][01]       |[더 많은 programmers post 보기][03]    |[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#Programmers "programmers posts"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+

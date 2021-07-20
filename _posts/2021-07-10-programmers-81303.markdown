@@ -13,7 +13,11 @@ cover:  "/assets/instacode.png"
 
 ## [프로그래머스] 표 편집 풀이 (2021 카카오 채용연계형 인턴십)
 
+---
+
 <https://programmers.co.kr/learn/courses/30/lessons/81303>
+
+---
 
 (효율성 통과 O)
 
