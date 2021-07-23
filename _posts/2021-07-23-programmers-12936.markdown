@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "[프로그래머스] 줄 서는 방법(C++)"
+date:   2021-07-23 10:00:00
+author: atomic0x90 (Yujun Han)
+categories: Programmers
+tags:  Programmers
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## [프로그래머스] 줄 서는 방법 풀이 (연습문제)
+
+---
+
+<https://programmers.co.kr/learn/courses/30/lessons/12936>
+
+---
+
+이 문제를 처음 봤을 때 **next_permutation**을 사용해서 풀었는데 효율성 테스트를 통과하지 못했다.  
+역시 lv3 문제가 이렇게 쉽게 풀릴 리 없었다.  
+
+그래서 다시 생각한 게 **n개**의 숫자 중에 **1개**를 선택하고 **나머지 숫자(n-1 개)**의 경우의 수는 **(n-1)!**이다.  
+이러한 규칙을 적용하면 남아있는 숫자 중에 제일 앞에 있는 숫자를 특정할 수 있다.
+
+---
+
+## 문제 풀이
+
+1. **n**개 중에 **1**개를 선택하고 **나머지 n-1 개**의 경우의 수(**(n-1)!**)를 저장(check)한다.
+1. 1부터 n까지의 자연수를 v에 저장한다.
+1. 현재 **X!**까지 계산했는지 **X**를 저장(len)한다.
+1. **v**가 1개가 남을 때까지 반복
+   - 첫 번째 숫자를 **i**번째 선택했을 때(**i*check**) **k**번째 나열한 것 보다 크면
+      + **answer**에 **v[i-1]**를 선택하여 저장
+      + **v[i-1]**를 삭제
+      + **(i-1)*check** 만큼 방법의 개수를 **k**에 빼준다.
+      + check를 len으로 나누고 len을 감소시킨다.
+      + 반복문을 빠져나간다.
+1. v에 남은 하나를 answer에 저장한다. 
+
+---
+
+## 정답 코드
+
+```cpp
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(int n, long long k) {
+    vector<int> answer;
+    vector<int> v;
+    long long check = 1;
+    for(int i = 1;i < n;i++) check *= i;
+    for(int i = 1;i <= n;i++) v.push_back(i);
+    
+    int len = n-1;
+    
+    while(v.size() != 1){
+        for(int i = 1;i <= v.size();i++){
+            if(i*check >= k){
+                answer.push_back(v[i-1]);
+                v.erase(v.begin()+i-1);
+                k -= (i-1)*check;
+                check /= (len--);
+                break;
+            }
+        }
+    }
+    
+    answer.push_back(v[0]);
+    
+    return answer;
+}
+```
+
+**감사합니다.**
+
+
+---
+
+
+[홈으로 가기][01]        |[더 많은 programmers post 보기][03]    	|[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#Programmers "programmers posts"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
