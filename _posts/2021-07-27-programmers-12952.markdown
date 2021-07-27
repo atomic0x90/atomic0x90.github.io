@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "[프로그래머스] N-Queen(C++)"
+date:   2021-07-27 10:00:00
+author: atomic0x90 (Yujun Han)
+categories: Programmers
+tags:  Programmers
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## [프로그래머스] N-Queen 풀이 (연습문제)
+
+---
+
+<https://programmers.co.kr/learn/courses/30/lessons/12952>
+
+---
+
+이 문제를 처음 접근했을 때는 행렬의 모든 곳에 퀸을 놔두며 조건에 맞는지 확인하려 했다.
+
+하지만 조건을 생각해 보니 같은 행에는 하나의 퀸만 존재할 수 있어서  
+행을 하나씩 옮기면서 현재 퀸을 놓을 자리로부터 대각선에 퀸이 있는지만 확인하면 되는 문제였다.
+
+---
+
+## 문제 풀이
+
+1. n 행 배열(**v**)을 만든다.
+   - **v[a] = b** 이것의 의미는 다음과 같다.
+   - **a 번째 행**에 **b 번째 열**에 퀸을 놓았다는 의미이다.
+1. 1번째 행부터 몇 번째 열에 퀸을 놓을지 정하면 된다.
+1. 만약 퀸이 정해진 개수만큼 놓여있으면 return 한다.
+
+1. 현재 행(now)에 퀸을 놓을 수 있는지 확인
+```cpp
+for(int i = 1;i <= N;i++)	//4
+```
+
+1. 이전의 행에 같은 열이 있는지 확인, 대각선에 퀸이 존재하는지 확인
+```cpp
+if(v[j] == i || abs(v[j]-i) == abs(j-now) )	//5
+```
+1. 현재 행(now)과 열(i)에 퀸을 놓을 수 있으면 행을 이동하고 위 과정을 반복한다.
+
+---
+
+## 정답 코드
+
+```cpp
+#include <string>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+int answer = 0;
+int N;
+
+void algo(vector<int> &v,int now,int check){
+    if(check == N){
+        answer++;
+        return;
+    }
+    
+    for(int i = 1;i <= N;i++){
+        int flag = 1;
+        for(int j = 1;j < now;j++){
+            if(v[j] == i || abs(v[j]-i) == abs(j-now) ){
+                flag = 0;
+                break;
+            }
+        }
+        if(flag){
+            v[now] = i;
+            algo(v,now+1,check+1);
+            v[now] = 0;
+        }
+    }
+    return;
+}
+
+int solution(int n) {
+    N = n;
+    vector<int> v(n+1,0);
+    algo(v,1,0);
+    return answer;
+}
+```
+
+**감사합니다.**
+
+
+---
+
+
+[홈으로 가기][01]        |[더 많은 programmers post 보기][03]    	|[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#Programmers "programmers posts"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
