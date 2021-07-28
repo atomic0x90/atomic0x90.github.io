@@ -1,0 +1,129 @@
+---
+layout: post
+title:  "[프로그래머스] 야근 지수(C++)"
+date:   2021-07-28 10:00:00
+author: atomic0x90 (Yujun Han)
+categories: Programmers
+tags:  Programmers
+sitemap :
+  changefreq : daily
+  priority : 1.0
+cover:  "/assets/instacode.png"
+---
+
+## [프로그래머스] 야근 지수 풀이 (연습문제)
+
+---
+
+<https://programmers.co.kr/learn/courses/30/lessons/12927>
+
+---
+
+이 문제를 처음 접했을 때는 works에 max_element 값의 위치를 찾아서 감소하는 방식으로 풀었다.
+ 이렇게 풀었더니 시간 초과가 났다.
+
+**시간 초과 풀이**
+```cpp
+#include <string>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+using namespace std;
+
+long long solution(int n, vector<int> works) {
+    long long answer = 0;
+    
+    while(n--){
+        if(*max_element(works.begin(),works.end()) == 0) break;
+        auto iter = find(works.begin(),works.end(),*max_element(works.begin(),works.end()));
+        (*iter)--;
+    }
+    
+    for(int i = 0;i < works.size();i++) answer += pow(works[i],2);
+
+    return answer;
+}
+```
+
+그래서 두 번째 생각은 정렬을 통해서 최댓값을 감소하고 정렬하는 방식으로 했다가 또 시간 초과가 났다.  
+어디서 시간 초과가 났는지 생각해 보니까 최댓값을 감소하고 바로 정렬을 한 부분이었다.  
+그래서 정렬을 최소한으로 하게 만들어서 효율성을 통과했다.
+
+---
+
+## 문제 풀이
+
+1. **works**를 **내림차순**으로 정렬한다.
+1. n 만큼 작업을 처리할 수 있기 때문에 n 만큼 반복한다.
+   1. **works.front 값**이 **최댓값**이기 때문에 0이면 break 한다.
+   1. check에 최댓값(works.front)를 저장한다.
+```cpp
+for(int i = 0;i < works.size();i++)
+```
+   1. n이 0이면 반복문을 나온다.
+   1. 위에 반복문을 통해 **works[i] 값**이 **최댓값(check)**이면 **감소**시킨다.
+   1. **works[i] 값**이 **최대값(check)이 아니**고 **다음 값보다 작으면** **works**를 **내림차순**으로 **정렬**한다.
+1. answer에 works 제곱한 값을 더한다.
+
+---
+
+## 정답 코드
+
+```cpp
+#include <string>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+using namespace std;
+
+long long solution(int n, vector<int> works) {
+    long long answer = 0;
+    
+    sort(works.begin(),works.end(),greater<int>());
+    
+    while(n){
+        if(works.front() == 0) break;
+        
+        int check = works.front();
+        
+        for(int i = 0;i < works.size();i++){
+            if(!n) break;
+            if(check == works[i]){
+                works[i]--;
+                n--;
+            }
+            else{
+                if(i != works.size()-1){
+                    if(works[i] < works[i+1]) sort(works.begin(),works.end(),greater<int>());
+                }
+                break;
+            }
+        }
+    }
+    
+    for(int i = 0;i < works.size();i++) answer += pow(works[i],2);
+
+    return answer;
+}
+```
+
+**감사합니다.**
+
+---
+
+출처: 프로그래머스 코딩 테스트 연습, <https://programmers.co.kr/learn/challenges>
+
+---
+
+
+[홈으로 가기][01]        |[더 많은 programmers post 보기][03]    	|[post 목록 보기][02]
+:------:                |:------:                               |:------:
+                        |                                       |
+
+
+[01]: https://atomic0x90.github.io/ "home"
+[02]: https://atomic0x90.github.io/posts/ "posts"
+[03]: https://atomic0x90.github.io/posts/#Programmers "programmers posts"
+
+{% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
+
