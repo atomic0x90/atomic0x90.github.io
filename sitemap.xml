@@ -28,6 +28,12 @@ layout: null
                 <changefreq>weekly</changefreq>
                 <priority>1.0</priority>
         </url>
+	<url>
+                <loc>https://atomic0x90.github.io/tftdice</loc>
+                <lastmod>2023-01-25</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>1.0</priority>
+        </url>
 {% for post in site.posts %}
     <url>
 	    <loc>{{ site.url }}{{ post.url }}</loc>
