@@ -240,7 +240,7 @@ int main(){
 
 [01]: https://atomic0x90.github.io/ "home"
 [02]: https://atomic0x90.github.io/posts/ "posts"
-[03]: https://atomic0x90.github.io/posts/#Cs "CS posts"
+[03]: https://atomic0x90.github.io/posts/#CS "CS posts"
 
 {% if site.disqus-shortname %}{% include disqus_comments.html %}{% endif %}
 
