@@ -11,29 +11,71 @@ layout: null
 		<priority>1.0</priority>
 	</url>	
 	<url>
-                <loc>https://atomic0x90.github.io/bokri/index.html</loc>
-                <lastmod>2021-09-02</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>1.0</priority>
-        </url>
+		<loc>https://atomic0x90.github.io/bokri/index.html</loc>
+		<lastmod>2021-09-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
 	<url>
-                <loc>https://atomic0x90.github.io/maple</loc>
-                <lastmod>2022-05-05</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>1.0</priority>
-        </url>
+		<loc>https://atomic0x90.github.io/maple</loc>
+		<lastmod>2022-05-05</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
 	<url>
-                <loc>https://atomic0x90.github.io/maplecube</loc>
-                <lastmod>2022-09-06</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>1.0</priority>
-        </url>
+		<loc>https://atomic0x90.github.io/maplecube</loc>
+		<lastmod>2022-09-06</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
 	<url>
-                <loc>https://atomic0x90.github.io/tftdice</loc>
-                <lastmod>2023-01-25</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>1.0</priority>
-        </url>
+		<loc>https://atomic0x90.github.io/tftdice</loc>
+		<lastmod>2023-01-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/rgb-to-hex.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/rgb-to-hsv.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/rgb-to-hsl.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/rgb-to-cmyk.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/hex-to-rgb.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/hsv-to-rgb.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/hsl-to-rgb.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/color-converter/assets/cmyk-to-rgb.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
 {% for post in site.posts %}
     <url>
 	    <loc>{{ site.url }}{{ post.url }}</loc>
