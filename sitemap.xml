@@ -76,6 +76,17 @@ layout: null
 		<priority>1.0</priority>
 	</url>
 
+	<url>
+		<loc>https://atomic0x90.github.io/viewer/assets/markdown-viewer.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://atomic0x90.github.io/viewer/assets/html-css-viewer.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
 {% for post in site.posts %}
     <url>
 	    <loc>{{ site.url }}{{ post.url }}</loc>
